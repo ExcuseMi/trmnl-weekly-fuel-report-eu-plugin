@@ -20,7 +20,7 @@ jobs:
         run: pip install requests
         
       - name: Run parser
-        run: python3 parse_fuel.py
+        run: python3 scripts/parse_fuel.py
         
       - name: Commit and push changes
         run: |
