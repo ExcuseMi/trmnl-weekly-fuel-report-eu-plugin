@@ -1,0 +1,81 @@
+
+<div class="layout layout--col">
+  <!-- Header -->
+  <div class="header">
+    <div class="header__logo">
+      <div class="logo logo--small"></div>
+    </div>
+    <div class="header__content">
+      <h1 class="title">Fuel Prices: {{ country.name }}</h1>
+      <span class="subtitle">Data from {{ country.last_updated }}</span>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="content">
+    <div class="grid grid--cols-2 gap--md">
+
+      <!-- Petrol Card -->
+      <div class="item item--bordered">
+        <div class="label">Euro 95 Petrol</div>
+        <div class="value">€{{ country.fuel.euro_95_petrol.eur_per_l.value }}<span class="unit">/L</span></div>
+        <div class="meta">
+          {% if country.fuel.weekly_change.petrol.value > 0 %}
+            <span class="text--error">▲ {{ country.fuel.weekly_change.petrol.value }}%</span>
+          {% else %}
+            <span class="text--success">▼ {{ country.fuel.weekly_change.petrol.value }}%</span>
+          {% endif %}
+          vs prev week
+        </div>
+      </div>
+
+      <!-- Diesel Card -->
+      <div class="item item--bordered">
+        <div class="label">Diesel</div>
+        <div class="value">€{{ country.fuel.diesel.eur_per_l.value }}<span class="unit">/L</span></div>
+        <div class="meta">
+          {% if country.fuel.weekly_change.diesel.value > 0 %}
+            <span class="text--error">▲ {{ country.fuel.weekly_change.diesel.value }}%</span>
+          {% else %}
+            <span class="text--success">▼ {{ country.fuel.weekly_change.diesel.value }}%</span>
+          {% endif %}
+          vs prev week
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Stats Table -->
+    <div class="table table--full-width mt--md">
+      <div class="table__row">
+        <div class="table__cell label">Inflation</div>
+        <div class="table__cell value text--right">{{ country.economics.inflation_rate.value }}%</div>
+      </div>
+      <div class="table__row">
+        <div class="table__cell label">Electricity</div>
+        <div class="table__cell value text--right">€{{ country.economics.electricity_price.value }}/kWh</div>
+      </div>
+      <div class="table__row">
+        <div class="table__cell label">Work for 50L</div>
+        <div class="table__cell value text--right">{{ country.economics.tank_50l.labor_hours.value }} hours</div>
+      </div>
+    </div>
+
+    <!-- Trend Indicator (Simple Text representation) -->
+    <div class="mt--sm text--center">
+      <div class="label small">E95 Trend (8 Weeks)</div>
+      <div class="text--tiny">
+        {% for point in country.fuel.trend_e95 %}
+          {{ point.value }}{% unless forloop.last %} → {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span>EU Avg: €{{ overview['EU Average Euro 95 Petrol'].value }}/L (E95)</span>
+    <span class="float--right">fuel-prices.eu</span>
+  </div>
+</div>

@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "last_updated": "2026-03-12T22:30:18+00:00",
+    "data_date": "2026-03-09",
+    "previous_data_date": "2026-03-02",
+    "update_frequency": "weekly (every Thursday after 15:00 EET)",
+    "next_expected_update": "2026-03-12",
+    "data_freshness_days": "3",
+    "source": "European Commission Weekly Oil Bulletin (official government dataset)",
+    "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
+    "source_type": "government_official",
+    "collection_method": "automated_weekly_ingestion + manual_verification",
+    "overall_source_reliability": "0.8",
+    "reliability_scale": "0.0 (unreliable) to 1.0 (authoritative)",
+    "Source Reliability Scores by Data Category": "",
+    "fuel_prices": "0.8 (EC Oil Bulletin — official, weekly, machine-verified)",
+    "road_tolls_vignettes": "0.75 (manually curated, updated periodically)",
+    "speed_limits": "0.90 (government sources, changes infrequently)",
+    "bac_limits": "0.92 (government sources, changes rarely)",
+    "driving_sides": "0.99 (static, virtually never changes)",
+    "emergency_numbers": "0.95 (official government data)",
+    "economic_data": "0.85 (Eurostat, updated quarterly/annually)",
+    "electricity_prices": "0.82 (Eurostat, semi-annual updates)",
+    "Per-Country Data Completeness (fuel prices)": "",
+    "AT": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "BE": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "BG": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "CY": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "CZ": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "DE": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "DK": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "EE": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "ES": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "FI": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "FR": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "GR": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "HR": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "HU": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "IE": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "IT": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "LT": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "LU": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "LV": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "MT": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "NL": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "PL": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "PT": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "RO": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "SE": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "SI": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "SK": {
+      "value": 100.0,
+      "unit": "percent"
+    },
+    "UK": {
+      "value": 0.0,
+      "unit": "percent"
+    }
+  },
+  "overview": {
+    "EU Average Euro 95 Petrol": {
+      "value": 1.648,
+      "unit": "EUR/L"
+    },
+    "EU Average Diesel": {
+      "value": 1.748,
+      "unit": "EUR/L"
+    },
+    "EU Cheapest Petrol": {
+      "value": 1.266,
+      "unit": "EUR/L"
+    },
+    "EU Most Expensive Petrol": {
+      "value": 2.172,
+      "unit": "EUR/L"
+    },
+    "EU Cheapest Diesel": {
+      "value": 1.21,
+      "unit": "EUR/L"
+    },
+    "EU Most Expensive Diesel": {
+      "value": 2.255,
+      "unit": "EUR/L"
+    },
+    "Countries tracked": "27 EU member states",
+    "Data available since": "2005-01-03"
+  },
+  "country": {
+    "name": "Germany",
+    "fuel": {
+      "euro_95_petrol": {
+        "eur_per_l": {
+          "value": 2.075,
+          "unit": "EUR/L"
+        },
+        "eur_per_gal": {
+          "value": 7.85,
+          "unit": "EUR/gal"
+        }
+      },
+      "diesel": {
+        "eur_per_l": {
+          "value": 2.163,
+          "unit": "EUR/L"
+        },
+        "eur_per_gal": {
+          "value": 8.19,
+          "unit": "EUR/gal"
+        }
+      },
+      "weekly_change": {
+        "petrol": {
+          "value": 9.9,
+          "unit": "percent"
+        },
+        "diesel": {
+          "value": 19.37,
+          "unit": "percent"
+        }
+      },
+      "vs_eu_avg": {
+        "value": 25.9,
+        "unit": "percent"
+      },
+      "trend_e95": [
+        {
+          "value": 1.789,
+          "unit": "EUR/L"
+        },
+        {
+          "value": 1.793,
+          "unit": "EUR/L"
+        },
+        {
+          "value": 1.793,
+          "unit": "EUR/L"
+        },
+        {
+          "value": 1.8,
+          "unit": "EUR/L"
+        },
+        {
+          "value": 1.804,
+          "unit": "EUR/L"
+        },
+        {
+          "value": 1.809,
+          "unit": "EUR/L"
+        },
+        {
+          "value": 1.824,
+          "unit": "EUR/L"
+        },
+        {
+          "value": 1.888,
+          "unit": "EUR/L"
+        },
+        {
+          "value": 2.075,
+          "unit": "EUR/L"
+        }
+      ]
+    },
+    "economics": {
+      "average_net_monthly_wage": {
+        "value": 2779.0,
+        "unit": "EUR"
+      },
+      "tank_50l": {
+        "cost": {
+          "value": 103.75,
+          "unit": "EUR"
+        },
+        "labor_hours": {
+          "value": 6.0,
+          "unit": "hours"
+        }
+      },
+      "electricity_price": {
+        "value": 0.3835,
+        "unit": "EUR/kWh"
+      },
+      "inflation_rate": {
+        "value": 2.5,
+        "unit": "percent"
+      }
+    },
+    "road_costs": {
+      "URL": "https://www.fuel-prices.eu/Germany/",
+      "last_updated": "2026-03-09",
+      "source_reliability": "0.8",
+      "data_completeness": {
+        "value": 100.0,
+        "unit": "percent"
+      },
+      "Historical range (since 2005-01-03)": {
+        "value": 1.077,
+        "unit": "EUR"
+      },
+      "Data points": "1057 weekly readings",
+      "Rossfeldpanoramastraße (gate)": {
+        "value": 8.5,
+        "unit": "EUR"
+      },
+      "Warnow Tunnel (Rostock) (tunnel)": {
+        "value": 5.1,
+        "unit": "EUR"
+      },
+      "Herren Tunnel (Lübeck) (tunnel)": {
+        "value": 2.1,
+        "unit": "EUR"
+      }
+    }
+  }
+}
