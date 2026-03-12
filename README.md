@@ -1,0 +1,1 @@
+# trmnl-weekly-fuel-report-eu-plugin
