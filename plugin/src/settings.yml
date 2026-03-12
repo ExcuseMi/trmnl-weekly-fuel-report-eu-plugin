@@ -1,15 +1,13 @@
-#
-# Changes to this file will be overwritten by `trmnlp pull`.
-#
 ---
 strategy: polling
 no_screen_padding: 'no'
 dark_mode: 'no'
 static_data: ''
 polling_verb: get
-polling_url: 'https://raw.githubusercontent.com/ExcuseMi/trmnl-weekly-fuel-report-eu-plugin/main/data/{{country}}.json'
+polling_url: https://raw.githubusercontent.com/ExcuseMi/trmnl-weekly-fuel-report-eu-plugin/main/data/{{country}}.json
 polling_headers: ''
 polling_body: ''
+id: 259468
 custom_fields:
 - keyname: country
   field_type: select

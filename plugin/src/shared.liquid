@@ -1,81 +1,95 @@
-
+{% template main %}
 <div class="layout layout--col">
-  <!-- Header -->
-  <div class="header">
-    <div class="header__logo">
-      <div class="logo logo--small"></div>
+  <!-- Top Bar -->
+  <div class="flex flex--row mb--5 w--full bg--gray-75">
+    <div class="item stretch grow bg--black text--white rounded p--2">
+      <div class="content">
+        <div class="value" data-clamp="1">{{ data.name }}</div>
+      </div>
     </div>
-    <div class="header__content">
-      <h1 class="title">Fuel Prices: {{ country.name }}</h1>
-      <span class="subtitle">Data from {{ country.last_updated }}</span>
+    <div class="item item--emphasis-2">
+      <div class="content">
+        <span class="value value--tnums">€{{ data.petrol | number_with_precision: 3 }}</span>
+        <span class="label">Petrol (E95)</span>
+      </div>
+    </div>
+    <div class="item item--emphasis-2">
+      <div class="content">
+        <span class="value value--tnums">€{{ data.diesel | number_with_precision: 3 }}</span>
+        <span class="label">Diesel</span>
+      </div>
     </div>
   </div>
 
-  <!-- Main Content Area -->
-  <div class="content">
-    <div class="grid grid--cols-2 gap--md">
-
-      <!-- Petrol Card -->
+  <div class="content grow overflow--hidden">
+    <div class="grid grid--cols-3 gap--md mb--md">
       <div class="item item--bordered">
-        <div class="label">Euro 95 Petrol</div>
-        <div class="value">€{{ country.fuel.euro_95_petrol.eur_per_l.value }}<span class="unit">/L</span></div>
-        <div class="meta">
-          {% if country.fuel.weekly_change.petrol.value > 0 %}
-            <span class="text--error">▲ {{ country.fuel.weekly_change.petrol.value }}%</span>
-          {% else %}
-            <span class="text--success">▼ {{ country.fuel.weekly_change.petrol.value }}%</span>
-          {% endif %}
-          vs prev week
-        </div>
+        <div class="label">Inflation</div>
+        <div class="value">{{ data.inflation }}%</div>
       </div>
-
-      <!-- Diesel Card -->
       <div class="item item--bordered">
-        <div class="label">Diesel</div>
-        <div class="value">€{{ country.fuel.diesel.eur_per_l.value }}<span class="unit">/L</span></div>
-        <div class="meta">
-          {% if country.fuel.weekly_change.diesel.value > 0 %}
-            <span class="text--error">▲ {{ country.fuel.weekly_change.diesel.value }}%</span>
-          {% else %}
-            <span class="text--success">▼ {{ country.fuel.weekly_change.diesel.value }}%</span>
-          {% endif %}
-          vs prev week
-        </div>
+        <div class="label">Electricity</div>
+        <div class="value">€{{ data.electricity }}<span class="unit">/kWh</span></div>
       </div>
-
-    </div>
-
-    <!-- Stats Table -->
-    <div class="table table--full-width mt--md">
-      <div class="table__row">
-        <div class="table__cell label">Inflation</div>
-        <div class="table__cell value text--right">{{ country.economics.inflation_rate.value }}%</div>
-      </div>
-      <div class="table__row">
-        <div class="table__cell label">Electricity</div>
-        <div class="table__cell value text--right">€{{ country.economics.electricity_price.value }}/kWh</div>
-      </div>
-      <div class="table__row">
-        <div class="table__cell label">Work for 50L</div>
-        <div class="table__cell value text--right">{{ country.economics.tank_50l.labor_hours.value }} hours</div>
+      <div class="item item--bordered">
+        <div class="label">Work for 50L</div>
+        <div class="value">{{ data.work_hours }}<span class="unit">hrs</span></div>
       </div>
     </div>
 
-    <!-- Trend Indicator (Simple Text representation) -->
-    <div class="mt--sm text--center">
-      <div class="label small">E95 Trend (8 Weeks)</div>
-      <div class="text--tiny">
-        {% for point in country.fuel.trend_e95 %}
-          {{ point.value }}{% unless forloop.last %} → {% endunless %}
-        {% endfor %}
-      </div>
-    </div>
-
+    <!-- Trend Chart Area -->
+    <div class="label small text--center mb--1">E95 Trend (8 Weeks)</div>
+    <div id="fuel-chart" class="w--full h--24"></div>
   </div>
 
-  <!-- Footer -->
-  <div class="footer">
-    <span>EU Avg: €{{ overview['EU Average Euro 95 Petrol'].value }}/L (E95)</span>
-    <span class="float--right">fuel-prices.eu</span>
-  </div>
+  <!-- Highcharts Scripts -->
+  <script src="https://trmnl.com/js/highcharts/12.3.0/highcharts.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const trendData = {{ data.trend | json }};
+      
+      Highcharts.chart('fuel-chart', {
+        chart: { 
+          type: 'line', 
+          animation: false,
+          spacing: [5, 5, 5, 5],
+          style: { fontFamily: 'var(--label-font-family)' }
+        },
+        title: { text: null },
+        credits: { enabled: false },
+        legend: { enabled: false },
+        xAxis: { visible: false },
+        yAxis: {
+          title: { text: null },
+          labels: { style: { color: "#000" } },
+          gridLineDashStyle: "shortdot",
+          gridLineColor: "#000"
+        },
+        plotOptions: {
+          line: {
+            animation: false,
+            color: '#000',
+            lineWidth: 2,
+            marker: { enabled: true, radius: 3 }
+          }
+        },
+        series: [{
+          name: 'E95',
+          data: trendData
+        }]
+      });
+    });
+  </script>
+
+  <!-- Title Bar Component -->
 </div>
+{% render "title_bar", trmnl: trmnl, data: data, icon: "fuel", _view_label: "Weekly Fuel Report (EU)" %}
+
+{% endtemplate %}
+{% template title_bar %}
+<div class="title_bar">
+  <span class="title text-stroke md:portrait:hidden lg:portrait:block">{{ trmnl.plugin_settings.instance_name | default: "Weekly Fuel Report" }}</span>
+
+  <span class="instance  text-stroke md:portrait:hidden">{{{{ trmnl.plugin_settings.custom_fields_values.country }} }}</span>
+</div>
+{% endtemplate %}
