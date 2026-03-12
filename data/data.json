@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-03-12T22:30:18+00:00",
+    "last_updated": "2026-03-12T23:31:08+00:00",
     "data_date": "2026-03-09",
     "previous_data_date": "2026-03-02",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
@@ -688,6 +688,7 @@
   "country_profiles": {
     "AT": {
       "name": "Austria",
+      "country_code": "AT",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -842,6 +843,7 @@
     },
     "BE": {
       "name": "Belgium",
+      "country_code": "BE",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -961,6 +963,7 @@
     },
     "BG": {
       "name": "Bulgaria",
+      "country_code": "BG",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -1100,6 +1103,7 @@
     },
     "HR": {
       "name": "Croatia",
+      "country_code": "HR",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -1238,6 +1242,7 @@
     },
     "CY": {
       "name": "Cyprus",
+      "country_code": "CY",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -1353,6 +1358,7 @@
     },
     "CZ": {
       "name": "Czechia",
+      "country_code": "CZ",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -1488,6 +1494,7 @@
     },
     "DK": {
       "name": "Denmark",
+      "country_code": "DK",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -1611,6 +1618,7 @@
     },
     "EE": {
       "name": "Estonia",
+      "country_code": "EE",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -1726,6 +1734,7 @@
     },
     "FI": {
       "name": "Finland",
+      "country_code": "FI",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -1841,6 +1850,7 @@
     },
     "FR": {
       "name": "France",
+      "country_code": "FR",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -1979,6 +1989,7 @@
     },
     "DE": {
       "name": "Germany",
+      "country_code": "DE",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -2106,6 +2117,7 @@
     },
     "HU": {
       "name": "Hungary",
+      "country_code": "HU",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -2249,6 +2261,7 @@
     },
     "IE": {
       "name": "Ireland",
+      "country_code": "IE",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -2387,6 +2400,7 @@
     },
     "IT": {
       "name": "Italy",
+      "country_code": "IT",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -2525,6 +2539,7 @@
     },
     "LV": {
       "name": "Latvia",
+      "country_code": "LV",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -2644,6 +2659,7 @@
     },
     "LT": {
       "name": "Lithuania",
+      "country_code": "LT",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -2763,6 +2779,7 @@
     },
     "LU": {
       "name": "Luxembourg",
+      "country_code": "LU",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -2878,6 +2895,7 @@
     },
     "MT": {
       "name": "Malta",
+      "country_code": "MT",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -2997,6 +3015,7 @@
     },
     "NL": {
       "name": "Netherlands",
+      "country_code": "NL",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -3093,6 +3112,7 @@
     },
     "PL": {
       "name": "Poland",
+      "country_code": "PL",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -3231,6 +3251,7 @@
     },
     "PT": {
       "name": "Portugal",
+      "country_code": "PT",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -3369,6 +3390,7 @@
     },
     "RO": {
       "name": "Romania",
+      "country_code": "RO",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -3520,6 +3542,7 @@
     },
     "SK": {
       "name": "Slovakia",
+      "country_code": "SK",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -3655,6 +3678,7 @@
     },
     "SI": {
       "name": "Slovenia",
+      "country_code": "SI",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -3782,6 +3806,7 @@
     },
     "ES": {
       "name": "Spain",
+      "country_code": "ES",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
@@ -3920,6 +3945,7 @@
     },
     "SE": {
       "name": "Sweden",
+      "country_code": "SE",
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {

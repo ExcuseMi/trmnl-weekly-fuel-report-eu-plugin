@@ -1,122 +1,131 @@
 {% template dashboard %}
-<div class="layout layout--col">
-  <!-- Top Bar: Country & Summary -->
-  <div class="flex flex--row mb--5 w--full bg--gray-75">
-    <div class="item stretch grow bg--black text--white rounded p--2">
-      <div class="content">
-        <div class="value" data-clamp="1">{{ data.name }}</div>
+<style>
+  .country-flag { width: 100px; border: 1px solid #000; }
+  .text--bold { font-weight: bold; }
+  .chart-container { height: 90px; width: 100%; }
+  .label--tiny { font-size: 0.6em; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.8; }
+</style>
+
+<div class="layout layout--col gap--medium">
+  <!-- Top Section: 3-Column Grid (Flag | Petrol Insights | Diesel Insights) -->
+  <div class="grid">
+    <!-- Country Flag -->
+    <div class="row row--center col--span-3 col--end">
+      <img class="country-flag image-dither" src="https://flagcdn.com/{{ data.code | downcase }}.svg">
+    </div>
+
+    <!-- Petrol Insights Block -->
+    <div class="col col--span-3 col--end">
+      <div class="item h--full bg--gray-75 rounded--small p--3">
+        <div class="content">
+          <span class="value value--xxlarge">€{{ data.petrol | number_with_precision: 3 }}</span>
+          <span class="label">Petrol (E95)</span>
+          
+          <div class="flex flex--row gap--md mt--2">
+            <div class="flex flex--col">
+              <span class="value value--xxsmall {% if data.petrol_change > 0 %}text--error{% else %}text--success{% endif %}">
+                {% if data.petrol_change > 0 %}▲{% else %}▼{% endif %} {{ data.petrol_change | abs }}%
+              </span>
+              <span class="label label--tiny">Weekly</span>
+            </div>
+            <div class="flex flex--col">
+              <span class="value value--xxsmall">{{ data.petrol_pct }}%</span>
+              <span class="label label--tiny">vs EU Avg</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="item item--emphasis-2">
-      <div class="content">
-        <span class="value value--tnums">€{{ data.petrol | number_with_precision: 3 }}</span>
-        <span class="label">Petrol (E95)</span>
-      </div>
-    </div>
-    <div class="item item--emphasis-2">
-      <div class="content">
-        <span class="value value--tnums">€{{ data.diesel | number_with_precision: 3 }}</span>
-        <span class="label">Diesel</span>
+
+    <!-- Diesel Insights Block -->
+    <div class="col col--span-3 col--end">
+      <div class="item h--full bg--gray-75 rounded--small p--3">
+        <div class="content">
+          <span class="value value--xxlarge">€{{ data.diesel | number_with_precision: 3 }}</span>
+          <span class="label">Diesel</span>
+          
+          <div class="flex flex--row gap--md mt--2">
+            <div class="flex flex--col">
+              <span class="value value--xxsmall {% if data.diesel_change > 0 %}text--error{% else %}text--success{% endif %}">
+                {% if data.diesel_change > 0 %}▲{% else %}▼{% endif %} {{ data.diesel_change | abs }}%
+              </span>
+              <span class="label label--tiny">Weekly</span>
+            </div>
+            <div class="flex flex--col">
+              <span class="value value--xxsmall">{{ data.diesel_pct }}%</span>
+              <span class="label label--tiny">vs EU Avg</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="content grow overflow--hidden">
-    <!-- Comparison vs EU Avg -->
-    <div class="grid grid--cols-2 gap--md mb--md">
-      <!-- Petrol vs Avg -->
-      <div class="item item--bordered">
-        <div class="label small">Petrol vs EU Avg (€{{ data.eu_avg_petrol }})</div>
-        <div class="progress-bar progress-bar--small mt--1">
-          <div class="track"><div class="fill" style="width:{{ data.petrol_pct }}%;"></div></div>
-        </div>
-        <div class="flex mt--1" style="justify-content:space-between;">
-          <span class="label label--small">{% if data.petrol_change > 0 %}<span class="text--error">▲ {{ data.petrol_change }}%</span>{% else %}<span class="text--success">▼ {{ data.petrol_change | abs }}%</span>{% endif %}</span>
-          <span class="label label--small">{{ data.petrol_pct }}% of Avg</span>
-        </div>
-      </div>
-
-      <!-- Diesel vs Avg -->
-      <div class="item item--bordered">
-        <div class="label small">Diesel vs EU Avg (€{{ data.eu_avg_diesel }})</div>
-        <div class="progress-bar progress-bar--small mt--1">
-          <div class="track"><div class="fill" style="width:{{ data.diesel_pct }}%;"></div></div>
-        </div>
-        <div class="flex mt--1" style="justify-content:space-between;">
-          <span class="label label--small">{% if data.diesel_change > 0 %}<span class="text--error">▲ {{ data.diesel_change }}%</span>{% else %}<span class="text--success">▼ {{ data.diesel_change | abs }}%</span>{% endif %}</span>
-          <span class="label label--small">{{ data.diesel_pct }}% of Avg</span>
-        </div>
+  <!-- Bottom Section: 5-Column Grid -->
+  <div class="grid grid--cols-5 gap--small">
+    <div class="col col--start gap--medium text--center bg--gray-75 rounded--small p--3">
+      <span class="title text--bold">Inflation</span>
+      <div class="w--full mt--1">
+        <span class="value value--small">{{ data.inflation }}%</span>
       </div>
     </div>
 
-    <!-- Stats Table -->
-    <div class="grid grid--cols-3 gap--md mb--md">
-      <div class="item item--bordered">
-        <div class="label">Inflation</div>
-        <div class="value">{{ data.inflation }}%</div>
-      </div>
-      <div class="item item--bordered">
-        <div class="label">Electricity</div>
-        <div class="value">€{{ data.electricity }}<span class="unit">/kWh</span></div>
-      </div>
-      <div class="item item--bordered">
-        <div class="label">Work for 50L</div>
-        <div class="value">{{ data.work_hours }}<span class="unit">hrs</span></div>
+    <div class="col col--start gap--medium text--center bg--gray-75 rounded--small p--3">
+      <span class="title text--bold">Electricity</span>
+      <div class="w--full mt--1">
+        <span class="value value--small">€{{ data.electricity | number_with_precision: 2 }}</span>
+        <br/><span class="label small">/kWh</span>
       </div>
     </div>
 
-    <!-- Trend Chart Area -->
-    <div class="label small text--center mb--1">Trend Analysis (E95)</div>
-    <div id="fuel-chart" class="w--full h--24"></div>
-  </div>
+    <div class="col col--start gap--medium text--center bg--gray-75 rounded--small p--3">
+      <span class="title text--bold">50L Tank</span>
+      <div class="w--full mt--1">
+        <span class="value value--small">{{ data.work_hours }}h</span>
+        <br/><span class="label small">labor</span>
+      </div>
+    </div>
 
-  <!-- Highcharts Scripts -->
-  <script src="https://trmnl.com/js/highcharts/12.3.0/highcharts.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const trendData = {{ data.trend | json }};
-      
-      Highcharts.chart('fuel-chart', {
-        chart: { 
-          type: 'line', 
-          animation: false,
-          spacing: [5, 5, 5, 5],
-          style: { fontFamily: 'var(--label-font-family)' }
-        },
-        title: { text: null },
-        credits: { enabled: false },
-        legend: { enabled: false },
-        xAxis: { visible: false },
-        yAxis: {
-          title: { text: null },
-          labels: { style: { color: "#000" } },
-          gridLineDashStyle: "shortdot",
-          gridLineColor: "#000"
-        },
-        plotOptions: {
-          line: {
-            animation: false,
-            color: '#000',
-            lineWidth: 2,
-            marker: { enabled: true, radius: 3 }
-          }
-        },
-        series: [{
-          name: 'E95',
-          data: trendData
-        }]
-      });
-    });
-  </script>
-
-  <!-- Custom Title Bar with Fuel Pump Icon -->
-  <div class="title_bar">
-  <svg class="w--8 h--8" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 512 512" x="0px" y="0px"><title>Price</title><path d="M187.673,308.087,110.1,448.5l98.461,40.431a15.875,15.875,0,0,0,20.694-8.647L286.7,340.4l-55.481,13.989L209.386,450.8a7,7,0,0,1-13.655-3.092L218.512,347.1a7,7,0,0,1,5.115-5.241l69.685-17.571,7.81-19.019-75.817-14.757A35.2,35.2,0,0,0,187.673,308.087Z"/><path d="M174,241.985a88.213,88.213,0,1,0-88.212-88.213A88.312,88.312,0,0,0,174,241.985Zm0-81.793a31.655,31.655,0,0,1-7-62.526V89.772a7,7,0,1,1,14,0v7.894a31.705,31.705,0,0,1,24.657,30.868,7,7,0,0,1-14,0A17.657,17.657,0,1,0,174,146.192a31.655,31.655,0,0,1,6,62.737v8.843a7,7,0,0,1-14,0V208.48a31.712,31.712,0,0,1-23.657-30.631,7,7,0,0,1,14,0A17.657,17.657,0,1,0,174,160.192Z"/><path d="M174,255.985a101.782,101.782,0,0,1-33.153-5.523,61.19,61.19,0,0,0-23.833,28.5l-60.567,147.5,40.619,16.679,78.353-141.827a49.154,49.154,0,0,1,52.56-24.546l78.566,15.292,31.195-75.97-67.554-27.74A102.387,102.387,0,0,1,174,255.985Z"/><path d="M440.4,21.883,372.848,57.605a155.59,155.59,0,0,0-71.062,78.3l-17.672,43.037,29.34,12.047,17.672-43.037a123.815,123.815,0,0,1,56.549-62.3l67.553-35.723Z"/></svg>
-    <svg class="w--6 h--6" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M19 12V7.5C19 6.12 17.88 5 16.5 5S14 6.12 14 7.5V13c0 .55-.45 1-1 1s-1-.45-1-1V7c0-2.21-1.79-4-4-4S4 4.79 4 7v14h10v-2h1v2c0 .55.45 1 1 1s1-.45 1-1v-2h1c1.1 0 2-.9 2-2V12h-1zM8 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM12 9H6V7h6v2z"/>
-    </svg>
-    <span class="title">Weekly Fuel Report (EU)</span>
-    <span class="instance">Updated {{ data.last_updated }}</span>
+    <!-- Chart Card spanning 2 columns -->
+    <div class="col col--span-2 col--start gap--medium bg--gray-75 rounded--small p--2">
+      <span class="title text--bold text--center w--full">8-Week Trend (E95)</span>
+      <div id="fuel-chart" class="w--full grow chart-container"></div>
+    </div>
   </div>
 </div>
+
+<script src="https://trmnl.com/js/highcharts/12.3.0/highcharts.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const trendData = {{ data.trend | json }};
+    Highcharts.chart('fuel-chart', {
+      chart: { type: 'area', animation: false, spacing: [2, 2, 2, 2], backgroundColor: 'transparent' },
+      title: { text: null },
+      credits: { enabled: false },
+      legend: { enabled: false },
+      xAxis: { visible: false },
+      yAxis: { title: { text: null }, labels: { enabled: false }, gridLineWidth: 0 },
+      plotOptions: {
+        area: {
+          animation: false,
+          color: '#000',
+          fillOpacity: 0.1,
+          lineWidth: 2,
+          marker: { enabled: true, radius: 2, fillColor: '#000' }
+        }
+      },
+      series: [{ data: trendData }]
+    });
+  });
+</script>
+
+{% unless trmnl.plugin_settings.custom_fields_values.hide_title_bar == 'yes' %}
+<div class="title_bar">
+  <svg class="image" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 12V7.5C19 6.12 17.88 5 16.5 5S14 6.12 14 7.5V13c0 .55-.45 1-1 1s-1-.45-1-1V7c0-2.21-1.79-4-4-4S4 4.79 4 7v14h10v-2h1v2c0 .55.45 1 1 1s1-.45 1-1v-2h1c1.1 0 2-.9 2-2V12h-1zM8 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM12 9H6V7h6v2z"/>
+  </svg>
+  <h1 class="title">Weekly Fuel Report (EU)</h1>
+  <span class="instance">{{ data.name }} · {{ data.last_updated | date: "%b %d" }}</span>
+</div>
+{% endunless %}
 {% endtemplate %}

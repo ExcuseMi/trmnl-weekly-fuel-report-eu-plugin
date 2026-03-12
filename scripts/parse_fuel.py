@@ -101,6 +101,7 @@ def parse_fuel_prices_txt(url="https://www.fuel-prices.eu/llms-full.txt"):
                 if current_section == "country_profiles" and match.group(2):
                     data["country_profiles"][current_country] = {
                         "name": match.group(1),
+                        "country_code": current_country,
                         "fuel": {},
                         "economics": {},
                         "road_costs": {}

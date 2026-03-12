@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-03-12T22:30:18+00:00",
+    "last_updated": "2026-03-12T23:31:08+00:00",
     "data_date": "2026-03-09",
     "previous_data_date": "2026-03-02",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
@@ -165,6 +165,7 @@
   },
   "country": {
     "name": "Italy",
+    "country_code": "IT",
     "fuel": {
       "euro_95_petrol": {
         "eur_per_l": {
