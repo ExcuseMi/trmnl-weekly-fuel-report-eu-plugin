@@ -1,12 +1,48 @@
+#
+# Changes to this file will be overwritten by `trmnlp pull`.
+#
 ---
 strategy: polling
 no_screen_padding: 'no'
 dark_mode: 'no'
 static_data: ''
 polling_verb: get
-polling_url: https://raw.githubusercontent.com/ExcuseMi/trmnl-fuel-prices-eu-plugin/main/data/AT.json
+polling_url: 'https://raw.githubusercontent.com/ExcuseMi/trmnl-weekly-fuel-report-eu-plugin/main/data/{{country}}.json'
 polling_headers: ''
-polling_body: 
-id: 259463
+polling_body: ''
+custom_fields:
+- keyname: country
+  field_type: select
+  name: Country
+  description: Choose an EU country to display its fuel data.
+  optional: false
+  options:
+  - Austria: AT
+  - Belgium: BE
+  - Bulgaria: BG
+  - Croatia: HR
+  - Cyprus: CY
+  - Czechia: CZ
+  - Denmark: DK
+  - Estonia: EE
+  - Finland: FI
+  - France: FR
+  - Germany: DE
+  - Greece: GR
+  - Hungary: HU
+  - Ireland: IE
+  - Italy: IT
+  - Latvia: LV
+  - Lithuania: LT
+  - Luxembourg: LU
+  - Malta: MT
+  - Netherlands: NL
+  - Poland: PL
+  - Portugal: PT
+  - Romania: RO
+  - Slovakia: SK
+  - Slovenia: SI
+  - Spain: ES
+  - Sweden: SE
 name: Weekly Fuel Report (EU)
 refresh_interval: 1440
