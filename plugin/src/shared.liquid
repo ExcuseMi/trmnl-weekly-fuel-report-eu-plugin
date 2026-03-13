@@ -92,12 +92,16 @@
   <!-- 50L Tank -->
   <div class="col bg--white rounded p--3 text--center portrait:hidden">
     <div class="flex flex--col align-items--center">
-
       <span class="label label--large label--underline">50L Tank</span>
     </div>
     <div class="w--full mt--1">
+      {% if data.work_hours %}
       <span class="value value--small lg:value--large">{{ data.work_hours | round: 1 | replace: ".", "," }}h</span>
       <br/><span class="label lg:label--large">labor</span>
+      {% else %}
+      <span class="value value--small lg:value--large">€{{ data.tank_cost | round: 0 | replace: ".", "," }}</span>
+      <br/><span class="label lg:label--large">cost</span>
+      {% endif %}
     </div>
   </div>
 

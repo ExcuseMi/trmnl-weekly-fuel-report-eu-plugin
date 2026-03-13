@@ -146,10 +146,11 @@ def parse_fuel_prices_txt(url="https://www.fuel-prices.eu/llms-full.txt"):
                     else:
                         # Price detail (€1.708/L (€6.47 per US gallon))
                         m = re.search(r"€\s*([\d.]+)/L\s*\(€\s*([\d.]+)", value)
-                        data["country_profiles"][current_country]["fuel"][key_clean.lower().replace(" ", "_")] = {
-                            "eur_per_l": {"value": float(m.group(1)), "unit": "EUR/L"} if m else None,
-                            "eur_per_gal": {"value": float(m.group(2)), "unit": "EUR/gal"} if m else None
-                        }
+                        if m:
+                            data["country_profiles"][current_country]["fuel"][key_clean.lower().replace(" ", "_")] = {
+                                "eur_per_l": {"value": float(m.group(1)), "unit": "EUR/L"},
+                                "eur_per_gal": {"value": float(m.group(2)), "unit": "EUR/gal"}
+                            }
                 
                 # Economics Section
                 elif any(x in key_clean for x in ["wage", "tank cost", "Electricity", "Inflation"]):
@@ -170,6 +171,21 @@ def parse_fuel_prices_txt(url="https://www.fuel-prices.eu/llms-full.txt"):
                 if "notes" not in data["country_profiles"][current_country]:
                     data["country_profiles"][current_country]["notes"] = []
                 data["country_profiles"][current_country]["notes"].append(line[2:].strip())
+
+    # Post-processing to fill missing economics data (e.g. Netherlands)
+    for cc, profile in data["country_profiles"].items():
+        if "economics" not in profile:
+            profile["economics"] = {}
+        
+        # Calculate 50L tank cost if missing but petrol price exists
+        if "tank_50l" not in profile["economics"]:
+            petrol_data = profile["fuel"].get("euro_95_petrol")
+            if petrol_data and petrol_data.get("eur_per_l"):
+                price = petrol_data["eur_per_l"]["value"]
+                profile["economics"]["tank_50l"] = {
+                    "cost": {"value": round(price * 50, 2), "unit": "EUR"},
+                    "labor_hours": None
+                }
 
     return data
 

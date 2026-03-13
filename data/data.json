@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "last_updated": "2026-03-12T23:31:08+00:00",
+    "last_updated": "2026-03-13T02:56:44+00:00",
     "data_date": "2026-03-09",
     "previous_data_date": "2026-03-02",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
     "next_expected_update": "2026-03-12",
-    "data_freshness_days": "3",
+    "data_freshness_days": "4",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
     "source_type": "government_official",
     "collection_method": "automated_weekly_ingestion + manual_verification",
-    "overall_source_reliability": "0.8",
+    "overall_source_reliability": "0.73",
     "reliability_scale": "0.0 (unreliable) to 1.0 (authoritative)",
     "Source Reliability Scores by Data Category": "",
-    "fuel_prices": "0.8 (EC Oil Bulletin — official, weekly, machine-verified)",
+    "fuel_prices": "0.73 (EC Oil Bulletin — official, weekly, machine-verified)",
     "road_tolls_vignettes": "0.75 (manually curated, updated periodically)",
     "speed_limits": "0.90 (government sources, changes infrequently)",
     "bac_limits": "0.92 (government sources, changes rarely)",
@@ -790,7 +790,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Austria/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -945,7 +945,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Belgium/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1065,7 +1065,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Bulgaria/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1205,7 +1205,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Croatia/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1344,7 +1344,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Cyprus/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1460,7 +1460,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Czechia/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1596,7 +1596,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Denmark/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1720,7 +1720,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Estonia/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1836,7 +1836,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Finland/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1952,7 +1952,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/France/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2091,7 +2091,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Germany/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2219,7 +2219,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Hungary/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2363,7 +2363,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Ireland/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2502,7 +2502,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Italy/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2641,7 +2641,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Latvia/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2761,7 +2761,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Lithuania/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2881,7 +2881,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Luxembourg/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2997,7 +2997,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Malta/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -3090,11 +3090,19 @@
           }
         ]
       },
-      "economics": {},
+      "economics": {
+        "tank_50l": {
+          "cost": {
+            "value": 108.6,
+            "unit": "EUR"
+          },
+          "labor_hours": null
+        }
+      },
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Netherlands/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -3214,7 +3222,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Poland/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -3353,7 +3361,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Portugal/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -3492,7 +3500,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Romania/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -3644,7 +3652,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Slovakia/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -3780,7 +3788,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Slovenia/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -3908,7 +3916,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Spain/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -4047,7 +4055,7 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Sweden/",
         "last_updated": "2026-03-09",
-        "source_reliability": "0.8",
+        "source_reliability": "0.73",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
