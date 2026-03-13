@@ -4,6 +4,61 @@ import json
 import os
 import argparse
 
+# ---------------------------------------------------------------------------
+# db.nomics.world fallback for missing economics data
+# Verified Eurostat series (as of 2026) — update if Eurostat restructures:
+#   Inflation : prc_hicp_manr  dims: freq.unit.coicop.geo
+#   Electricity: nrg_pc_204    dims: freq.product.nrg_cons.unit.tax.currency.geo
+#   Net wages  : earn_nt_net   dims: freq.currency.estruct.ecase.geo  (annual EUR)
+# ---------------------------------------------------------------------------
+NOMICS_BASE = "https://api.db.nomics.world/v22/series"
+
+NOMICS_SERIES = {
+    # Annual rate of change, all-items HICP (monthly series, returns %)
+    "inflation_rate": ("Eurostat", "prc_hicp_manr", "M.RCH_A.CP00.{cc}", "percent", 1.0),
+    # Household electricity price incl. all taxes, band DC (2500–4999 kWh/yr), EUR/kWh
+    "electricity_price": ("Eurostat", "nrg_pc_204", "S.6000.KWH2500-4999.KWH.I_TAX.EUR.{cc}", "EUR/kWh", 1.0),
+    # Annual net earnings, single worker, no children, 100 % of avg wage — divide by 12 → monthly
+    "average_net_monthly_wage": ("Eurostat", "earn_nt_net", "A.EUR.NET.P1_NCH_AW100.{cc}", "EUR", 1 / 12),
+}
+
+HOURS_PER_MONTH = 160  # 40 h/week × 4 weeks, matches fuel-prices.eu methodology
+
+def fetch_last_nomics_value(provider, dataset, series_id):
+    """Return the most recent non-null value for a db.nomics series, or None."""
+    url = f"{NOMICS_BASE}/{provider}/{dataset}/{series_id}?observations=1"
+    try:
+        r = requests.get(url, timeout=15)
+        if r.status_code != 200:
+            return None
+        docs = r.json().get("series", {}).get("docs", [])
+        if not docs:
+            return None
+        for v in reversed(docs[0].get("value", [])):
+            if v is not None:
+                return float(v)
+    except Exception:
+        pass
+    return None
+
+
+def fetch_nomics_economics(cc):
+    """
+    Fetch missing economics fields from db.nomics (Eurostat) for *cc* (ISO 2-letter).
+    Returns a dict with only the fields that were successfully fetched.
+    """
+    result = {}
+    cc_upper = cc.upper()
+    for field, (provider, dataset, series_tmpl, unit, multiplier) in NOMICS_SERIES.items():
+        series_id = series_tmpl.format(cc=cc_upper)
+        raw = fetch_last_nomics_value(provider, dataset, series_id)
+        if raw is not None:
+            value = round(raw * multiplier, 4)
+            result[field] = {"value": value, "unit": unit}
+            print(f"  [{cc_upper}] {field} from db.nomics ({dataset}): {value} {unit}")
+    return result
+
+
 def clean_num(text):
     if not text: return None
     cleaned = re.sub(r"[^\d.-]", "", text.replace(",", ""))
@@ -172,20 +227,35 @@ def parse_fuel_prices_txt(url="https://www.fuel-prices.eu/llms-full.txt"):
                     data["country_profiles"][current_country]["notes"] = []
                 data["country_profiles"][current_country]["notes"].append(line[2:].strip())
 
-    # Post-processing to fill missing economics data (e.g. Netherlands)
+    # Post-processing: fill missing economics data from db.nomics (Eurostat)
+    REQUIRED_ECON = {"inflation_rate", "electricity_price", "average_net_monthly_wage"}
+
     for cc, profile in data["country_profiles"].items():
-        if "economics" not in profile:
-            profile["economics"] = {}
-        
-        # Calculate 50L tank cost if missing but petrol price exists
-        if "tank_50l" not in profile["economics"]:
-            petrol_data = profile["fuel"].get("euro_95_petrol")
-            if petrol_data and petrol_data.get("eur_per_l"):
-                price = petrol_data["eur_per_l"]["value"]
-                profile["economics"]["tank_50l"] = {
-                    "cost": {"value": round(price * 50, 2), "unit": "EUR"},
-                    "labor_hours": None
-                }
+        econ = profile.setdefault("economics", {})
+
+        # Fetch any missing fields from db.nomics
+        missing = {f for f in REQUIRED_ECON if not econ.get(f)}
+        if missing:
+            print(f"[{cc}] Missing economics fields {missing}, fetching from db.nomics …")
+            for field, val in fetch_nomics_economics(cc).items():
+                if field in missing:
+                    econ[field] = val
+
+        # Ensure tank_50l cost is always present (derived from current petrol price)
+        petrol_data = profile["fuel"].get("euro_95_petrol")
+        if petrol_data and petrol_data.get("eur_per_l"):
+            price = petrol_data["eur_per_l"]["value"]
+            tank_cost = round(price * 50, 2)
+            if "tank_50l" not in econ:
+                econ["tank_50l"] = {"cost": {"value": tank_cost, "unit": "EUR"}, "labor_hours": None}
+
+            # Calculate labor_hours whenever wage is available
+            tank_entry = econ["tank_50l"]
+            if tank_entry.get("labor_hours") is None:
+                wage = (econ.get("average_net_monthly_wage") or {}).get("value")
+                if wage:
+                    hourly = wage / HOURS_PER_MONTH
+                    tank_entry["labor_hours"] = {"value": round(tank_cost / hourly, 1), "unit": "hours"}
 
     return data
 
