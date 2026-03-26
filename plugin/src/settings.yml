@@ -15,6 +15,11 @@ custom_fields:
   field_type: author_bio
   description: Weekly insights into EU fuel prices, inflation, and energy costs. Features a side-by-side comparison of Petrol and Diesel against EU averages, plus an 8-week price trend chart.
   github_url: https://github.com/ExcuseMi/trmnl-weekly-fuel-report-eu-plugin
+- keyname: show_stats
+  field_type: boolean
+  name: Show Stats Row
+  description: Show the second row with inflation, electricity price, 50L tank cost and 8-week trend chart.
+  optional: true
 - keyname: country
   field_type: select
   name: Country

@@ -35,7 +35,35 @@
 
 {% template block_identity %}
 <div class="item flex--col no-shrink bg--white rounded overflow--hidden w--full md:portrait:hidden lg:portrait:hidden h--full">
-  <img class="country-map image-dither h--[50cqh]"  src="{{ data.map_url }}">
+  <img class="country-map image-dither h--[50cqh]" src="{{ data.map_url }}">
+</div>
+{% endtemplate %}
+
+{% template block_electricity %}
+<div class="item rounded bg--white p--3 w--full h--full">
+  <div class="content w--full">
+    <span class="value {% if view == 4 %}md:value--base lg:value--large{% elsif view == 3 %}value--xlarge md:value--large lg:value--xlarge{% elsif view == 2 %}md:value--large lg:value--xxxlarge{% else %}value--xlarge lg:value--xxxlarge{% endif %} text--center w--full">€{{ data.electricity | round: 2 | replace: ".", "," }}</span>
+    <span class="label {% if view == 4 %}md:label--small lg:label--base{% elsif view == 3 %}label--large md:label--base lg:label--large{% elsif view == 2 %}md:label--base lg:label--xlarge{% else %}label--large lg:label--xlarge{% endif %}">Electricity /kWh</span>
+    <div class="divider"></div>
+    <div class="flex flex--col align-items--center mt--1 w--full text--center">
+      <span class="value value--small lg:value--base {% if data.inflation > 0 %}text--error{% else %}text--success{% endif %}">{{ data.inflation | round: 1 | replace: ".", "," }}%</span>
+      <span class="label label--small lg:label--base uppercase">Inflation</span>
+    </div>
+  </div>
+</div>
+{% endtemplate %}
+
+{% template block_tank %}
+<div class="item rounded bg--white p--3 w--full h--full">
+  <div class="content w--full">
+    <span class="value {% if view == 4 %}md:value--base lg:value--large{% elsif view == 3 %}value--xlarge md:value--large lg:value--xlarge{% else %}value--xlarge lg:value--xxxlarge{% endif %} text--center w--full">{% if data.work_hours %}{{ data.work_hours | round: 1 | replace: ".", "," }}h{% else %}€{{ data.tank_cost | round: 0 }}{% endif %}</span>
+    <span class="label {% if view == 4 %}md:label--small lg:label--base{% elsif view == 3 %}label--large md:label--base lg:label--large{% else %}label--large lg:label--xlarge{% endif %}">50L Tank</span>
+    <div class="divider"></div>
+    <div class="flex flex--col align-items--center mt--1 w--full text--center">
+      <span class="value value--small lg:value--base">€{{ data.tank_cost | round: 0 | replace: ".", "," }}</span>
+      <span class="label label--small lg:label--base uppercase">Cost</span>
+    </div>
+  </div>
 </div>
 {% endtemplate %}
 
@@ -44,19 +72,18 @@
   <div class="content w--full">
     <div class="flex flex--row gap--sm align-items--center mb--1 w--full">
     </div>
-    <span class="value {% if view == 2 or view == 4 %} md:value--base {% else if view==3 %}md:portrait:value--base  lg:portrait:value--large value--xlarge {% else %} value--xlarge {% endif %}  lg:value--xxxlarge text--center w--full">€{{ value | round: 2 | replace: ".", "," }}</span>
-      <span class="label {% if view == 2 or view == 4 %}md:label--base {% else %} label--large{% endif %} lg:label--xlarge lg:portrait:label--xlarge">
-        {{name}}</span>
+    <span class="value {% if view == 4 %}md:value--base lg:value--large{% elsif view == 3 %}value--xlarge md:value--large lg:value--xlarge{% elsif view == 2 %}md:value--large lg:value--xxxlarge{% else %}value--xlarge lg:value--xxxlarge{% endif %} text--center w--full">€{{ value | round: 2 | replace: ".", "," }}</span>
+    <span class="label {% if view == 4 %}md:label--small lg:label--base{% elsif view == 3 %}label--large md:label--base lg:label--large{% elsif view == 2 %}md:label--base lg:label--xlarge{% else %}label--large lg:label--xlarge{% endif %}">{{name}}</span>
     <div class="divider"></div>
-    <div class="flex flex--row gap--md mt--2 w--full flex--evenly">
+    <div class="flex flex--row gap--sm mt--1 w--full flex--evenly">
       <div class="flex flex--col">
         <span class="value value--small lg:value--base {% if change > 0 %}text--error{% else %}text--success{% endif %}">
           {% if change > 0 %}▲{% else %}▼{% endif %} {{ change | abs | round: 2 | replace: ".", "," }}%
         </span>
         <span class="label label--small lg:label--base uppercase">WEEKLY</span>
       </div>
-      <div class="divider--v"></div>
-      <div class="flex flex--col">
+      <div class="divider--v {% if view == 3 or view == 4 %}md:hidden{% endif %}"></div>
+      <div class="flex flex--col {% if view == 3 or view == 4 %}md:hidden{% endif %}">
         <span class="value value--small lg:value--base">{{ percent }}%</span>
         <span class="label label--small lg:label--base uppercase">VS EU AVG</span>
       </div>
@@ -66,7 +93,7 @@
 {% endtemplate %}
 
 {% template block_stats %}
-<div class="grid w--full gap--small no-shrink {% if view == 2 or view == 4%} md:hidden {% endif %}">
+<div class="grid w--full gap--small no-shrink {% if view == 2 or view == 3 or view == 4 %} md:hidden {% endif %}">
   <!-- Inflation -->
   <div class="col bg--white rounded p--3 text--center">
     <div class="flex flex--col align-items--center">
@@ -124,31 +151,69 @@
 {% endtemplate %}
 
 {% template dashboard %}
-<div class="layout  bg--gray-50 rounded">
-  <div class="flex flex--col gap--medium p--2 w--full h--full" data-overflow="true">
+{% assign show_stats = true %}
+{% if trmnl.plugin_settings.custom_fields_values.show_stats == "false" %}
+  {% assign show_stats = false %}
+{% endif %}
 
-    <!-- Landscape view -->
-    <div class="columns portrait:hidden gap--medium h--full">
-      <div class="column col--span-2 h--full">
-        {% render "block_identity", data: data,view:view %}
+<div class="layout bg--gray-50 rounded">
+  <div class="flex flex--col gap--small p--2 w--full h--full" data-overflow="true">
+
+    <!-- Landscape: row of price blocks.
+         First column (map/electricity) only on views 1+2 with stats enabled.
+         Views 3+4 are compact — just the two price blocks. -->
+    {% assign show_first_col = false %}
+    {% if show_stats and view != 3 and view != 4 %}{% assign show_first_col = true %}{% endif %}
+
+    <div class="columns portrait:hidden gap--small h--full">
+      {% if show_first_col %}
+        {% if view == 1 %}
+        <div class="column col--span-2 h--full">
+          {% render "block_identity", data: data, view: view %}
+        </div>
+        {% else %}
+        <div class="column col--span-4 h--full">
+          {% render "block_electricity", data: data, view: view %}
+        </div>
+        {% endif %}
+      {% endif %}
+      <div class="column {% if show_first_col %}col--span-4{% else %}col--span-5{% endif %} h--full">
+        {% render "block_fuel", name: 'Petrol (E95)', value: data.petrol, change: data.petrol_change, percent: data.petrol_pct, view: view %}
       </div>
-      <div class="column col--span-4 h--full">
-        {% render "block_fuel", name: 'Petrol (E95)', value: data.petrol, change: data.petrol_change, percent: data.petrol_pct, view:view %}
-      </div>
-      <div class="column col--span-4 h--full">
-        {% render "block_fuel", name: 'Diesel', value: data.diesel, change: data.diesel_change, percent: data.diesel_pct, view:view %}
+      <div class="column {% if show_first_col %}col--span-4{% else %}col--span-5{% endif %} h--full">
+        {% render "block_fuel", name: 'Diesel', value: data.diesel, change: data.diesel_change, percent: data.diesel_pct, view: view %}
       </div>
     </div>
 
-    <!-- Portrait view -->
-    <div class="hidden portrait:flex flex--col gap--medium w--full no-shrink">
-      {% render "block_identity", data: data %}
+    <!-- Second landscape row for half-vertical: electricity + tank -->
+    {% if view == 3 %}
+    <div class="columns portrait:hidden gap--small no-shrink w--full">
+      <div class="column col--span-5 h--full">
+        {% render "block_electricity", data: data, view: view %}
+      </div>
+      <div class="column col--span-5 h--full">
+        {% render "block_tank", data: data, view: view %}
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- Portrait: vertical stack, map only when stats are on -->
+    <div class="hidden portrait:flex flex--col gap--small w--full no-shrink">
+      {% if show_stats %}
+        {% render "block_identity", data: data %}
+      {% endif %}
       {% render "block_fuel", name: 'Petrol (E95)', value: data.petrol, change: data.petrol_change, percent: data.petrol_pct %}
       {% render "block_fuel", name: 'Diesel', value: data.diesel, change: data.diesel_change, percent: data.diesel_pct %}
+      {% if view == 3 %}
+        {% render "block_electricity", data: data, view: view %}
+        {% render "block_tank", data: data, view: view %}
+      {% endif %}
     </div>
 
-    <!-- Common blocks -->
-    {% render "block_stats", data: data, view:view %}
+    <!-- Stats row (second row) -->
+    {% if show_stats %}
+      {% render "block_stats", data: data, view: view %}
+    {% endif %}
 
   </div>
 </div>
