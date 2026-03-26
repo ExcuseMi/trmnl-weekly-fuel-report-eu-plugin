@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "last_updated": "2026-03-13T10:20:08+00:00",
-    "data_date": "2026-03-09",
-    "previous_data_date": "2026-03-02",
+    "last_updated": "2026-03-26T18:07:01+00:00",
+    "data_date": "2026-03-23",
+    "previous_data_date": "2026-03-16",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-03-12",
-    "data_freshness_days": "4",
+    "next_expected_update": "2026-03-26",
+    "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
     "source_type": "government_official",
     "collection_method": "automated_weekly_ingestion + manual_verification",
-    "overall_source_reliability": "0.73",
+    "overall_source_reliability": "0.8",
     "reliability_scale": "0.0 (unreliable) to 1.0 (authoritative)",
     "Source Reliability Scores by Data Category": "",
-    "fuel_prices": "0.73 (EC Oil Bulletin — official, weekly, machine-verified)",
+    "fuel_prices": "0.8 (EC Oil Bulletin — official, weekly, machine-verified)",
     "road_tolls_vignettes": "0.75 (manually curated, updated periodically)",
     "speed_limits": "0.90 (government sources, changes infrequently)",
     "bac_limits": "0.92 (government sources, changes rarely)",
@@ -137,19 +137,19 @@
   },
   "overview": {
     "EU Average Euro 95 Petrol": {
-      "value": 1.648,
+      "value": 1.778,
       "unit": "EUR/L"
     },
     "EU Average Diesel": {
-      "value": 1.748,
+      "value": 1.958,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
-      "value": 1.266,
+      "value": 1.34,
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.172,
+      "value": 2.347,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -157,11 +157,12 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.255,
+      "value": 2.475,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
-    "Data available since": "2005-01-03"
+    "Data available since": "2005-01-03",
+    "EUR/USD rate": "$1.1592 (ECB daily reference rate)"
   },
   "country": {
     "name": "Slovenia",
@@ -169,47 +170,39 @@
     "fuel": {
       "euro_95_petrol": {
         "eur_per_l": {
-          "value": 1.435,
+          "value": 1.465,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 5.43,
+          "value": 5.55,
           "unit": "EUR/gal"
         }
       },
       "diesel": {
         "eur_per_l": {
-          "value": 1.462,
+          "value": 1.524,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 5.53,
+          "value": 5.77,
           "unit": "EUR/gal"
         }
       },
       "weekly_change": {
         "petrol": {
-          "value": 0.63,
+          "value": 1.52,
           "unit": "percent"
         },
         "diesel": {
-          "value": 0.07,
+          "value": 2.7,
           "unit": "percent"
         }
       },
       "vs_eu_avg": {
-        "value": -12.9,
+        "value": -17.6,
         "unit": "percent"
       },
       "trend_e95": [
-        {
-          "value": 1.38,
-          "unit": "EUR/L"
-        },
-        {
-          "value": 1.381,
-          "unit": "EUR/L"
-        },
         {
           "value": 1.383,
           "unit": "EUR/L"
@@ -237,6 +230,14 @@
         {
           "value": 1.435,
           "unit": "EUR/L"
+        },
+        {
+          "value": 1.443,
+          "unit": "EUR/L"
+        },
+        {
+          "value": 1.465,
+          "unit": "EUR/L"
         }
       ]
     },
@@ -247,11 +248,11 @@
       },
       "tank_50l": {
         "cost": {
-          "value": 71.75,
+          "value": 73.25,
           "unit": "EUR"
         },
         "labor_hours": {
-          "value": 5.8,
+          "value": 5.9,
           "unit": "hours"
         }
       },
@@ -266,8 +267,8 @@
     },
     "road_costs": {
       "URL": "https://www.fuel-prices.eu/Slovenia/",
-      "last_updated": "2026-03-09",
-      "source_reliability": "0.73",
+      "last_updated": "2026-03-23",
+      "source_reliability": "0.8",
       "data_completeness": {
         "value": 100.0,
         "unit": "percent"
@@ -276,7 +277,7 @@
         "value": 0.82,
         "unit": "EUR"
       },
-      "Data points": "1057 weekly readings",
+      "Data points": "1059 weekly readings",
       "Vignette Slovenia (7-Day)": {
         "value": 16.0,
         "unit": "EUR"
