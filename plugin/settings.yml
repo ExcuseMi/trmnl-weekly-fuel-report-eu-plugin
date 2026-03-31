@@ -1,0 +1,59 @@
+---
+strategy: polling
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+framework_version: 2.3.7
+serverless_language: ''
+polling_url: https://raw.githubusercontent.com/ExcuseMi/trmnl-weekly-fuel-report-eu-plugin/main/data/{{country}}.json
+polling_headers: ''
+polling_body: ''
+id: 259476
+custom_fields:
+- keyname: bio
+  name: About This Plugin
+  category: finance,custom
+  field_type: author_bio
+  description: Weekly insights into EU fuel prices, inflation, and energy costs. Features a side-by-side comparison of Petrol and Diesel against EU averages, plus an 8-week price trend chart.
+  github_url: https://github.com/ExcuseMi/trmnl-weekly-fuel-report-eu-plugin
+- keyname: show_stats
+  field_type: boolean
+  name: Show Stats Row
+  description: Show the second row with inflation, electricity price, 50L tank cost and 8-week trend chart.
+  optional: true
+- keyname: country
+  field_type: select
+  name: Country
+  description: Choose an EU country to display its fuel data.
+  optional: false
+  options:
+  - Austria: AT
+  - Belgium: BE
+  - Bulgaria: BG
+  - Croatia: HR
+  - Cyprus: CY
+  - Czechia: CZ
+  - Denmark: DK
+  - Estonia: EE
+  - Finland: FI
+  - France: FR
+  - Germany: DE
+  - Greece: GR
+  - Hungary: HU
+  - Ireland: IE
+  - Italy: IT
+  - Latvia: LV
+  - Lithuania: LT
+  - Luxembourg: LU
+  - Malta: MT
+  - Netherlands: NL
+  - Poland: PL
+  - Portugal: PT
+  - Romania: RO
+  - Slovakia: SK
+  - Slovenia: SI
+  - Spain: ES
+  - Sweden: SE
+name: Weekly Fuel Report (EU)
+refresh_interval: 1440
