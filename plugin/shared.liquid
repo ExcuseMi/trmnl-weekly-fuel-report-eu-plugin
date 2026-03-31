@@ -126,7 +126,7 @@
   </div>
 
   <div class="col col--span-2 bg--white rounded p--3 text--center portrait:hidden">
-    {% render "block_trend" %}
+    {% render "block_trend", fuel_chart_id:fuel_chart_id %}
   </div>
 </div>
 {% endtemplate %}
@@ -137,7 +137,7 @@
 
   <span class="label label--large lg:label--xxlarge label--underline block w--full text--center">
     8-Week Trend (E95)</span>
-  <div id="fuel-chart" class="w--full" style="height: 100px;"></div>
+  <div id="{{fuel_chart_id}}" class="w--full" style="height: 100px;"></div>
 </div>
   </div>
 
@@ -148,7 +148,7 @@
 {% if trmnl.plugin_settings.custom_fields_values.show_stats == "false" %}
   {% assign show_stats = false %}
 {% endif %}
-
+{% assign fuel_chart_id = "fuel-chart" | append_random %}
 <div class="layout bg--gray-50 rounded">
   <div class="flex flex--col gap--small p--2 w--full h--full" data-overflow="true">
 
@@ -189,7 +189,7 @@
 
     <!-- Stats row (second row) -->
     {% if show_stats %}
-      {% render "block_stats", data: data, view: view %}
+      {% render "block_stats", data: data, fuel_chart_id:fuel_chart_id, view: view %}
     {% endif %}
 
   </div>
@@ -199,7 +199,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const trendData = {{ data.trend | json }};
-  Highcharts.chart('fuel-chart', {
+  Highcharts.chart('{{fuel_chart_id}}', {
     chart: { type: 'area', animation: false, spacing: [2, 2, 2, 2], backgroundColor: 'transparent' },
     title: { text: null },
     credits: { enabled: false },
