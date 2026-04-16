@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-04-09T17:08:54+00:00",
-    "data_date": "2026-04-06",
-    "previous_data_date": "2026-03-30",
+    "last_updated": "2026-04-16T17:16:30+00:00",
+    "data_date": "2026-04-13",
+    "previous_data_date": "2026-04-06",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-04-09",
+    "next_expected_update": "2026-04-16",
     "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
@@ -139,11 +139,11 @@
   },
   "overview": {
     "EU Average Euro 95 Petrol": {
-      "value": 1.796,
+      "value": 1.784,
       "unit": "EUR/L"
     },
     "EU Average Diesel": {
-      "value": 2.04,
+      "value": 2.021,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
@@ -151,7 +151,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.363,
+      "value": 2.316,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -159,7 +159,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.585,
+      "value": 2.469,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
@@ -172,43 +172,39 @@
     "fuel": {
       "euro_95_petrol": {
         "eur_per_l": {
-          "value": 1.881,
+          "value": 1.917,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 7.12,
+          "value": 7.26,
           "unit": "EUR/gal"
         }
       },
       "diesel": {
         "eur_per_l": {
-          "value": 2.099,
+          "value": 2.161,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 7.95,
+          "value": 8.18,
           "unit": "EUR/gal"
         }
       },
       "weekly_change": {
         "petrol": {
-          "value": -3.93,
+          "value": 1.91,
           "unit": "percent"
         },
         "diesel": {
-          "value": -3.63,
+          "value": 2.95,
           "unit": "percent"
         }
       },
       "vs_eu_avg": {
-        "value": 4.7,
+        "value": 7.4,
         "unit": "percent"
       },
       "trend_e95": [
-        {
-          "value": 1.738,
-          "unit": "EUR/L"
-        },
         {
           "value": 1.738,
           "unit": "EUR/L"
@@ -240,6 +236,10 @@
         {
           "value": 1.881,
           "unit": "EUR/L"
+        },
+        {
+          "value": 1.917,
+          "unit": "EUR/L"
         }
       ]
     },
@@ -250,11 +250,11 @@
       },
       "tank_50l": {
         "cost": {
-          "value": 94.05,
+          "value": 95.85,
           "unit": "EUR"
         },
         "labor_hours": {
-          "value": 4.3,
+          "value": 4.4,
           "unit": "hours"
         }
       },
@@ -269,7 +269,7 @@
     },
     "road_costs": {
       "URL": "https://www.fuel-prices.eu/Ireland/",
-      "last_updated": "2026-04-06",
+      "last_updated": "2026-04-13",
       "source_reliability": "0.8",
       "data_completeness": {
         "value": 100.0,
@@ -279,7 +279,7 @@
         "value": 0.937,
         "unit": "EUR"
       },
-      "Data points": "1061 weekly readings",
+      "Data points": "1062 weekly readings",
       "Dublin Port Tunnel (gate)": {
         "value": 13.0,
         "unit": "EUR"
