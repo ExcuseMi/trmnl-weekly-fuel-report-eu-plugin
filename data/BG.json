@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-04-16T17:16:30+00:00",
-    "data_date": "2026-04-13",
-    "previous_data_date": "2026-04-06",
+    "last_updated": "2026-04-23T17:21:56+00:00",
+    "data_date": "2026-04-20",
+    "previous_data_date": "2026-04-13",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-04-16",
+    "next_expected_update": "2026-04-23",
     "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
@@ -139,11 +139,11 @@
   },
   "overview": {
     "EU Average Euro 95 Petrol": {
-      "value": 1.784,
+      "value": 1.764,
       "unit": "EUR/L"
     },
     "EU Average Diesel": {
-      "value": 2.021,
+      "value": 1.943,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
@@ -151,7 +151,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.316,
+      "value": 2.279,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -159,7 +159,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.469,
+      "value": 2.296,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
@@ -192,23 +192,19 @@
       },
       "weekly_change": {
         "petrol": {
-          "value": 0.75,
+          "value": 0.0,
           "unit": "percent"
         },
         "diesel": {
-          "value": 3.6,
+          "value": 0.0,
           "unit": "percent"
         }
       },
       "vs_eu_avg": {
-        "value": -17.6,
+        "value": -16.7,
         "unit": "percent"
       },
       "trend_e95": [
-        {
-          "value": 1.219,
-          "unit": "EUR/L"
-        },
         {
           "value": 1.218,
           "unit": "EUR/L"
@@ -240,6 +236,10 @@
         {
           "value": 1.47,
           "unit": "EUR/L"
+        },
+        {
+          "value": 1.47,
+          "unit": "EUR/L"
         }
       ]
     },
@@ -259,17 +259,18 @@
         }
       },
       "electricity_price": {
-        "value": 0.13,
+        "value": 0.1355,
         "unit": "EUR/kWh"
       },
       "inflation_rate": {
-        "value": 2.6,
+        "value": 3.5,
         "unit": "percent"
       }
     },
     "road_costs": {
       "URL": "https://www.fuel-prices.eu/Bulgaria/",
-      "last_updated": "2026-04-13",
+      "Also available in Bulgarian": "https://www.fuel-prices.eu/lang/bg",
+      "last_updated": "2026-04-20",
       "source_reliability": "0.8",
       "data_completeness": {
         "value": 100.0,
@@ -279,7 +280,7 @@
         "value": 0.741,
         "unit": "EUR"
       },
-      "Data points": "914 weekly readings",
+      "Data points": "915 weekly readings",
       "1-Day E-Vignette": {
         "value": 4.09,
         "unit": "EUR"
