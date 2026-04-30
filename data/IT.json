@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-04-23T17:21:56+00:00",
-    "data_date": "2026-04-20",
-    "previous_data_date": "2026-04-13",
+    "last_updated": "2026-04-30T17:22:29+00:00",
+    "data_date": "2026-04-27",
+    "previous_data_date": "2026-04-20",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-04-23",
+    "next_expected_update": "2026-04-30",
     "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
@@ -139,11 +139,11 @@
   },
   "overview": {
     "EU Average Euro 95 Petrol": {
-      "value": 1.764,
+      "value": 1.777,
       "unit": "EUR/L"
     },
     "EU Average Diesel": {
-      "value": 1.943,
+      "value": 1.913,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
@@ -151,7 +151,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.279,
+      "value": 2.324,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -159,7 +159,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.296,
+      "value": 2.337,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
@@ -172,43 +172,39 @@
     "fuel": {
       "euro_95_petrol": {
         "eur_per_l": {
-          "value": 1.763,
+          "value": 1.732,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 6.67,
+          "value": 6.56,
           "unit": "EUR/gal"
         }
       },
       "diesel": {
         "eur_per_l": {
-          "value": 2.115,
+          "value": 2.06,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 8.01,
+          "value": 7.8,
           "unit": "EUR/gal"
         }
       },
       "weekly_change": {
         "petrol": {
-          "value": -1.12,
+          "value": -1.76,
           "unit": "percent"
         },
         "diesel": {
-          "value": -1.76,
+          "value": -2.6,
           "unit": "percent"
         }
       },
       "vs_eu_avg": {
-        "value": 0.0,
+        "value": -2.5,
         "unit": "percent"
       },
       "trend_e95": [
-        {
-          "value": 1.655,
-          "unit": "EUR/L"
-        },
         {
           "value": 1.67,
           "unit": "EUR/L"
@@ -240,6 +236,10 @@
         {
           "value": 1.763,
           "unit": "EUR/L"
+        },
+        {
+          "value": 1.732,
+          "unit": "EUR/L"
         }
       ]
     },
@@ -250,11 +250,11 @@
       },
       "tank_50l": {
         "cost": {
-          "value": 88.15,
+          "value": 86.6,
           "unit": "EUR"
         },
         "labor_hours": {
-          "value": 7.4,
+          "value": 7.3,
           "unit": "hours"
         }
       },
@@ -270,7 +270,7 @@
     "road_costs": {
       "URL": "https://www.fuel-prices.eu/Italy/",
       "Also available in Italian": "https://www.fuel-prices.eu/lang/it",
-      "last_updated": "2026-04-20",
+      "last_updated": "2026-04-27",
       "source_reliability": "0.8",
       "data_completeness": {
         "value": 100.0,
@@ -280,7 +280,7 @@
         "value": 1.083,
         "unit": "EUR"
       },
-      "Data points": "1062 weekly readings",
+      "Data points": "1063 weekly readings",
       "Mont Blanc Tunnel (IT->FR) (tunnel)": {
         "value": 56.4,
         "unit": "EUR"
