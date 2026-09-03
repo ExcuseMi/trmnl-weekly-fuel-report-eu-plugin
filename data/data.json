@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "last_updated": "2026-08-28T00:45:51+00:00",
-    "data_date": "2026-08-24",
-    "previous_data_date": "2026-08-17",
+    "last_updated": "2026-09-03T19:09:05+00:00",
+    "data_date": "2026-08-31",
+    "previous_data_date": "2026-08-24",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-08-27",
-    "data_freshness_days": "4",
+    "next_expected_update": "2026-09-03",
+    "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
     "source_type": "government_official",
     "collection_method": "automated_weekly_ingestion + manual_verification",
-    "overall_source_reliability": "0.73",
+    "overall_source_reliability": "0.8",
     "reliability_scale": "0.0 (unreliable) to 1.0 (authoritative)",
     "Source Reliability Scores by Data Category": "",
-    "fuel_prices": "0.73 (EC Oil Bulletin — official, weekly, machine-verified)",
+    "fuel_prices": "0.8 (EC Oil Bulletin — official, weekly, machine-verified)",
     "road_tolls_vignettes": "0.75 (manually curated, updated periodically)",
     "speed_limits": "0.90 (government sources, changes infrequently)",
     "bac_limits": "0.92 (government sources, changes rarely)",
@@ -22,7 +22,7 @@
     "economic_data": "0.85 (Eurostat, updated quarterly/annually)",
     "electricity_prices": "0.82 (Eurostat, semi-annual updates)",
     "live_station_prices_fr_es_it": "0.80 (official gov't open data, real-time, updated every 12-18h)",
-    "price_breakdown_tax": "0.73 (derived from EC Oil Bulletin excise/VAT/tax sheets, same source)",
+    "price_breakdown_tax": "0.8 (derived from EC Oil Bulletin excise/VAT/tax sheets, same source)",
     "Per-Country Data Completeness (fuel prices)": "",
     "AT": {
       "value": 100.0,
@@ -139,11 +139,11 @@
   },
   "overview": {
     "EU Average Euro 95 Petrol": {
-      "value": 1.825,
+      "value": 1.84,
       "unit": "EUR/L"
     },
     "EU Average Diesel": {
-      "value": 1.979,
+      "value": 1.966,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
@@ -151,7 +151,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.459,
+      "value": 2.524,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -159,7 +159,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.416,
+      "value": 2.334,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
@@ -184,33 +184,29 @@
         },
         "diesel": {
           "eur_per_l": {
-            "value": 2.05,
+            "value": 1.993,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.76,
+            "value": 7.54,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": -0.61,
+            "value": 0.0,
             "unit": "percent"
           },
           "diesel": {
-            "value": 0.34,
+            "value": -2.78,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -2.2,
+          "value": -3.1,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.649,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.686,
             "unit": "EUR/L"
@@ -237,6 +233,10 @@
           },
           {
             "value": 1.795,
+            "unit": "EUR/L"
+          },
+          {
+            "value": 1.784,
             "unit": "EUR/L"
           },
           {
@@ -272,8 +272,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Austria/",
         "Also available in German": "https://www.fuel-prices.eu/lang/de",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -282,7 +282,7 @@
           "value": 0.876,
           "unit": "EUR"
         },
-        "Data points": "1079 weekly readings",
+        "Data points": "1080 weekly readings",
         "1-Day Vignette (Digital)": {
           "value": 9.6,
           "unit": "EUR"
@@ -330,43 +330,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.9,
+            "value": 1.885,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.19,
+            "value": 7.14,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 2.257,
+            "value": 2.208,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 8.54,
+            "value": 8.36,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 3.2,
+            "value": -0.79,
             "unit": "percent"
           },
           "diesel": {
-            "value": 3.82,
+            "value": -2.17,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": 4.1,
+          "value": 2.4,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.73,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.729,
             "unit": "EUR/L"
@@ -398,6 +394,10 @@
           {
             "value": 1.9,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.885,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -408,7 +408,7 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 95.0,
+            "value": 94.25,
             "unit": "EUR"
           },
           "labor_hours": {
@@ -428,8 +428,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Belgium/",
         "Also available in Dutch": "https://www.fuel-prices.eu/lang/nl",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -438,7 +438,7 @@
           "value": 1.01,
           "unit": "EUR"
         },
-        "Data points": "1080 weekly readings",
+        "Data points": "1081 weekly readings",
         "Liefkenshoek Tunnel (tunnel)": {
           "value": 7.0,
           "unit": "EUR"
@@ -451,43 +451,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.55,
+            "value": 1.571,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 5.87,
+            "value": 5.95,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.798,
+            "value": 1.813,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.81,
+            "value": 6.86,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 0.98,
+            "value": 1.35,
             "unit": "percent"
           },
           "diesel": {
-            "value": 1.7,
+            "value": 0.83,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -15.1,
+          "value": -14.6,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.465,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.462,
             "unit": "EUR/L"
@@ -519,6 +515,10 @@
           {
             "value": 1.55,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.571,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -529,11 +529,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 77.5,
+            "value": 78.55,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 12.4,
+            "value": 12.6,
             "unit": "hours"
           }
         },
@@ -549,8 +549,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Bulgaria/",
         "Also available in Bulgarian": "https://www.fuel-prices.eu/lang/bg",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -559,7 +559,7 @@
           "value": 0.741,
           "unit": "EUR"
         },
-        "Data points": "933 weekly readings",
+        "Data points": "934 weekly readings",
         "1-Day E-Vignette": {
           "value": 5.3,
           "unit": "EUR"
@@ -592,43 +592,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.693,
+            "value": 1.723,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.41,
+            "value": 6.52,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.932,
+            "value": 1.989,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.31,
+            "value": 7.53,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 4.31,
+            "value": 1.77,
             "unit": "percent"
           },
           "diesel": {
-            "value": 5.29,
+            "value": 2.95,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -7.2,
+          "value": -6.4,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.612,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.593,
             "unit": "EUR/L"
@@ -660,6 +656,10 @@
           {
             "value": 1.693,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.723,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -670,11 +670,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 84.65,
+            "value": 86.15,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 10.2,
+            "value": 10.4,
             "unit": "hours"
           }
         },
@@ -690,8 +690,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Croatia/",
         "Also available in Croatian": "https://www.fuel-prices.eu/lang/hr",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -700,7 +700,7 @@
           "value": 1.029,
           "unit": "EUR"
         },
-        "Data points": "663 weekly readings",
+        "Data points": "664 weekly readings",
         "Zagreb - Split (A1) (gate)": {
           "value": 26.4,
           "unit": "EUR"
@@ -732,43 +732,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.595,
+            "value": 1.602,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.04,
+            "value": 6.06,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.833,
+            "value": 1.857,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.94,
+            "value": 7.03,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 0.0,
+            "value": 0.44,
             "unit": "percent"
           },
           "diesel": {
-            "value": 1.55,
+            "value": 1.31,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -12.6,
+          "value": -12.9,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.504,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.471,
             "unit": "EUR/L"
@@ -800,6 +796,10 @@
           {
             "value": 1.595,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.602,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -810,7 +810,7 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 79.75,
+            "value": 80.1,
             "unit": "EUR"
           },
           "labor_hours": {
@@ -830,8 +830,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Cyprus/",
         "Also available in Greek": "https://www.fuel-prices.eu/lang/el",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -840,7 +840,7 @@
           "value": 0.743,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings"
+        "Data points": "1082 weekly readings"
       }
     },
     "CZ": {
@@ -849,43 +849,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.739,
+            "value": 1.742,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.58,
+            "value": 6.59,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.899,
+            "value": 1.903,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.19,
+            "value": 7.2,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 1.46,
+            "value": 0.17,
             "unit": "percent"
           },
           "diesel": {
-            "value": 2.98,
+            "value": 0.21,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -4.7,
+          "value": -5.3,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.598,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.621,
             "unit": "EUR/L"
@@ -917,6 +913,10 @@
           {
             "value": 1.739,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.742,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -927,7 +927,7 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 86.95,
+            "value": 87.1,
             "unit": "EUR"
           },
           "labor_hours": {
@@ -947,8 +947,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Czechia/",
         "Also available in Czech": "https://www.fuel-prices.eu/lang/cs",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -957,7 +957,7 @@
           "value": 0.804,
           "unit": "EUR"
         },
-        "Data points": "1080 weekly readings",
+        "Data points": "1081 weekly readings",
         "1-Day Vignette": {
           "value": 9.52,
           "unit": "EUR"
@@ -982,43 +982,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 2.459,
+            "value": 2.524,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 9.31,
+            "value": 9.55,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 2.277,
+            "value": 2.274,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 8.62,
+            "value": 8.61,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 0.57,
+            "value": 2.64,
             "unit": "percent"
           },
           "diesel": {
-            "value": 1.2,
+            "value": -0.13,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": 34.7,
+          "value": 37.2,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 2.339,
-            "unit": "EUR/L"
-          },
           {
             "value": 2.325,
             "unit": "EUR/L"
@@ -1050,6 +1046,10 @@
           {
             "value": 2.459,
             "unit": "EUR/L"
+          },
+          {
+            "value": 2.524,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -1060,11 +1060,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 122.95,
+            "value": 126.2,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 5.1,
+            "value": 5.2,
             "unit": "hours"
           }
         },
@@ -1080,8 +1080,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Denmark/",
         "Also available in Danish": "https://www.fuel-prices.eu/lang/da",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1090,7 +1090,7 @@
           "value": 1.045,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "Øresund Bridge (bridge)": {
           "value": 63.0,
           "unit": "EUR"
@@ -1107,43 +1107,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.772,
+            "value": 1.812,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.71,
+            "value": 6.86,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.88,
+            "value": 1.922,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.12,
+            "value": 7.28,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 0.0,
+            "value": 2.26,
             "unit": "percent"
           },
           "diesel": {
-            "value": 0.0,
+            "value": 2.23,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -2.9,
+          "value": -1.5,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.661,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.641,
             "unit": "EUR/L"
@@ -1175,6 +1171,10 @@
           {
             "value": 1.772,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.812,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -1185,11 +1185,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 88.6,
+            "value": 90.6,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 9.4,
+            "value": 9.6,
             "unit": "hours"
           }
         },
@@ -1205,8 +1205,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Estonia/",
         "Also available in Estonian": "https://www.fuel-prices.eu/lang/et",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1215,7 +1215,7 @@
           "value": 0.674,
           "unit": "EUR"
         },
-        "Data points": "1080 weekly readings"
+        "Data points": "1081 weekly readings"
       }
     },
     "FI": {
@@ -1224,43 +1224,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 2.177,
+            "value": 2.203,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 8.24,
+            "value": 8.34,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 2.346,
+            "value": 2.334,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 8.88,
+            "value": 8.84,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 1.73,
+            "value": 1.19,
             "unit": "percent"
           },
           "diesel": {
-            "value": 1.21,
+            "value": -0.51,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": 19.3,
+          "value": 19.7,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 2.125,
-            "unit": "EUR/L"
-          },
           {
             "value": 2.125,
             "unit": "EUR/L"
@@ -1292,6 +1288,10 @@
           {
             "value": 2.177,
             "unit": "EUR/L"
+          },
+          {
+            "value": 2.203,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -1302,11 +1302,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 108.85,
+            "value": 110.15,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 6.2,
+            "value": 6.3,
             "unit": "hours"
           }
         },
@@ -1322,8 +1322,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Finland/",
         "Also available in Finnish": "https://www.fuel-prices.eu/lang/fi",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1332,7 +1332,7 @@
           "value": 1.086,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings"
+        "Data points": "1082 weekly readings"
       }
     },
     "FR": {
@@ -1341,43 +1341,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 2.063,
+            "value": 2.073,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.81,
+            "value": 7.85,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 2.231,
+            "value": 2.209,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 8.45,
+            "value": 8.36,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 1.23,
+            "value": 0.48,
             "unit": "percent"
           },
           "diesel": {
-            "value": 1.46,
+            "value": -0.99,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": 13.0,
+          "value": 12.7,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.935,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.921,
             "unit": "EUR/L"
@@ -1409,6 +1405,10 @@
           {
             "value": 2.063,
             "unit": "EUR/L"
+          },
+          {
+            "value": 2.073,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -1419,7 +1419,7 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 103.15,
+            "value": 103.65,
             "unit": "EUR"
           },
           "labor_hours": {
@@ -1439,8 +1439,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/France/",
         "Also available in French": "https://www.fuel-prices.eu/lang/fr",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1449,7 +1449,7 @@
           "value": 1.015,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "Mont Blanc Tunnel (FR-IT) (tunnel)": {
           "value": 56.4,
           "unit": "EUR"
@@ -1481,43 +1481,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 2.245,
+            "value": 2.236,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 8.5,
+            "value": 8.46,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 2.286,
+            "value": 2.232,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 8.65,
+            "value": 8.45,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 0.27,
+            "value": -0.4,
             "unit": "percent"
           },
           "diesel": {
-            "value": 0.88,
+            "value": -2.36,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": 23.0,
+          "value": 21.5,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.9,
-            "unit": "EUR/L"
-          },
           {
             "value": 2.058,
             "unit": "EUR/L"
@@ -1549,6 +1545,10 @@
           {
             "value": 2.245,
             "unit": "EUR/L"
+          },
+          {
+            "value": 2.236,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -1559,11 +1559,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 112.25,
+            "value": 111.8,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 6.5,
+            "value": 6.4,
             "unit": "hours"
           }
         },
@@ -1579,8 +1579,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Germany/",
         "Also available in German": "https://www.fuel-prices.eu/lang/de",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1589,7 +1589,7 @@
           "value": 1.077,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "Rossfeldpanoramastraße (gate)": {
           "value": 8.5,
           "unit": "EUR"
@@ -1610,43 +1610,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.634,
+            "value": 1.638,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.19,
+            "value": 6.2,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.879,
+            "value": 1.859,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.11,
+            "value": 7.04,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 1.18,
+            "value": 0.24,
             "unit": "percent"
           },
           "diesel": {
-            "value": 1.02,
+            "value": -1.06,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -10.5,
+          "value": -11.0,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.624,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.648,
             "unit": "EUR/L"
@@ -1678,6 +1674,10 @@
           {
             "value": 1.634,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.638,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -1688,7 +1688,7 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 81.7,
+            "value": 81.9,
             "unit": "EUR"
           },
           "labor_hours": {
@@ -1708,8 +1708,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Hungary/",
         "Also available in Hungarian": "https://www.fuel-prices.eu/lang/hu",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1718,7 +1718,7 @@
           "value": 0.804,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "1-Day E-Matrica": {
           "value": 15.34,
           "unit": "EUR"
@@ -1751,7 +1751,7 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.836,
+            "value": 1.837,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
@@ -1761,33 +1761,29 @@
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.906,
+            "value": 1.931,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.21,
+            "value": 7.31,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": -0.16,
+            "value": 0.05,
             "unit": "percent"
           },
           "diesel": {
-            "value": 0.26,
+            "value": 1.31,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": 0.6,
+          "value": -0.2,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.762,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.73,
             "unit": "EUR/L"
@@ -1819,6 +1815,10 @@
           {
             "value": 1.836,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.837,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -1829,7 +1829,7 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 91.8,
+            "value": 91.85,
             "unit": "EUR"
           },
           "labor_hours": {
@@ -1848,8 +1848,8 @@
       },
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Ireland/",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1858,7 +1858,7 @@
           "value": 0.937,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "Dublin Port Tunnel (gate)": {
           "value": 13.0,
           "unit": "EUR"
@@ -1890,43 +1890,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 2.003,
+            "value": 2.017,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.58,
+            "value": 7.64,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 2.115,
+            "value": 2.124,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 8.01,
+            "value": 8.04,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 0.75,
+            "value": 0.7,
             "unit": "percent"
           },
           "diesel": {
-            "value": 1.73,
+            "value": 0.43,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": 9.8,
+          "value": 9.6,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.812,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.81,
             "unit": "EUR/L"
@@ -1958,6 +1954,10 @@
           {
             "value": 2.003,
             "unit": "EUR/L"
+          },
+          {
+            "value": 2.017,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -1968,11 +1968,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 100.15,
+            "value": 100.85,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 8.4,
+            "value": 8.5,
             "unit": "hours"
           }
         },
@@ -1988,8 +1988,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Italy/",
         "Also available in Italian": "https://www.fuel-prices.eu/lang/it",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -1998,7 +1998,7 @@
           "value": 1.083,
           "unit": "EUR"
         },
-        "Data points": "1080 weekly readings",
+        "Data points": "1081 weekly readings",
         "Mont Blanc Tunnel (IT->FR) (tunnel)": {
           "value": 56.4,
           "unit": "EUR"
@@ -2030,43 +2030,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.844,
+            "value": 1.841,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.98,
+            "value": 6.97,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.972,
+            "value": 1.952,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.46,
+            "value": 7.39,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 1.49,
+            "value": -0.16,
             "unit": "percent"
           },
           "diesel": {
-            "value": 3.03,
+            "value": -1.01,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": 1.0,
+          "value": 0.0,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.727,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.72,
             "unit": "EUR/L"
@@ -2098,6 +2094,10 @@
           {
             "value": 1.844,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.841,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -2108,7 +2108,7 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 92.2,
+            "value": 92.05,
             "unit": "EUR"
           },
           "labor_hours": {
@@ -2128,8 +2128,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Latvia/",
         "Also available in Latvian": "https://www.fuel-prices.eu/lang/lv",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2138,7 +2138,7 @@
           "value": 0.714,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "Jūrmala Entry Pass (gate)": {
           "value": 3.0,
           "unit": "EUR"
@@ -2151,43 +2151,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.778,
+            "value": 1.79,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.73,
+            "value": 6.78,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 2.052,
+            "value": 2.043,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.77,
+            "value": 7.73,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 0.45,
+            "value": 0.67,
             "unit": "percent"
           },
           "diesel": {
-            "value": 1.03,
+            "value": -0.44,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -2.6,
+          "value": -2.7,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.664,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.661,
             "unit": "EUR/L"
@@ -2219,6 +2215,10 @@
           {
             "value": 1.778,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.79,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -2229,11 +2229,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 88.9,
+            "value": 89.5,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 8.6,
+            "value": 8.7,
             "unit": "hours"
           }
         },
@@ -2249,8 +2249,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Lithuania/",
         "Also available in Lithuanian": "https://www.fuel-prices.eu/lang/lt",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2259,7 +2259,7 @@
           "value": 0.699,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "Curonian Spit (Neringa) Entry (gate)": {
           "value": 30.0,
           "unit": "EUR"
@@ -2272,43 +2272,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.727,
+            "value": 1.748,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.54,
+            "value": 6.62,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.963,
+            "value": 1.865,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.43,
+            "value": 7.06,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 0.0,
+            "value": 1.22,
             "unit": "percent"
           },
           "diesel": {
-            "value": 2.13,
+            "value": -4.99,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -5.4,
+          "value": -5.0,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.648,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.646,
             "unit": "EUR/L"
@@ -2340,6 +2336,10 @@
           {
             "value": 1.727,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.748,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -2350,11 +2350,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 86.35,
+            "value": 87.4,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 2.9,
+            "value": 3.0,
             "unit": "hours"
           }
         },
@@ -2370,8 +2370,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Luxembourg/",
         "Also available in French": "https://www.fuel-prices.eu/lang/fr",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2380,7 +2380,7 @@
           "value": 0.861,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings"
+        "Data points": "1082 weekly readings"
       }
     },
     "MT": {
@@ -2418,7 +2418,7 @@
           }
         },
         "vs_eu_avg": {
-          "value": -26.6,
+          "value": -27.2,
           "unit": "percent"
         },
         "trend_e95": [
@@ -2486,8 +2486,8 @@
       },
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Malta/",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2496,7 +2496,7 @@
           "value": 0.864,
           "unit": "EUR"
         },
-        "Data points": "1080 weekly readings",
+        "Data points": "1081 weekly readings",
         "Valletta CVA (Congestion Charge) (gate)": {
           "value": 2.0,
           "unit": "EUR"
@@ -2509,43 +2509,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 2.353,
+            "value": 2.35,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 8.91,
+            "value": 8.9,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 2.416,
+            "value": 2.326,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 9.15,
+            "value": 8.8,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 1.03,
+            "value": -0.13,
             "unit": "percent"
           },
           "diesel": {
-            "value": 1.38,
+            "value": -3.73,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": 28.9,
+          "value": 27.7,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 2.203,
-            "unit": "EUR/L"
-          },
           {
             "value": 2.203,
             "unit": "EUR/L"
@@ -2577,6 +2573,10 @@
           {
             "value": 2.353,
             "unit": "EUR/L"
+          },
+          {
+            "value": 2.35,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -2595,7 +2595,7 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 117.65,
+            "value": 117.5,
             "unit": "EUR"
           },
           "labor_hours": {
@@ -2607,8 +2607,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Netherlands/",
         "Also available in Dutch": "https://www.fuel-prices.eu/lang/nl",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2617,7 +2617,7 @@
           "value": 1.193,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "Kiltunnel (tunnel)": {
           "value": 2.0,
           "unit": "EUR"
@@ -2630,43 +2630,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.508,
+            "value": 1.525,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 5.71,
+            "value": 5.77,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.728,
+            "value": 1.669,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.54,
+            "value": 6.32,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 1.82,
+            "value": 1.13,
             "unit": "percent"
           },
           "diesel": {
-            "value": 2.49,
+            "value": -3.41,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -17.4,
+          "value": -17.1,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.39,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.579,
             "unit": "EUR/L"
@@ -2698,6 +2694,10 @@
           {
             "value": 1.508,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.525,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -2708,11 +2708,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 75.4,
+            "value": 76.25,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 9.6,
+            "value": 9.7,
             "unit": "hours"
           }
         },
@@ -2728,8 +2728,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Poland/",
         "Also available in Polish": "https://www.fuel-prices.eu/lang/pl",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2738,7 +2738,7 @@
           "value": 0.777,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "A2 Wielkopolska (Świecko-Konin) (gate)": {
           "value": 31.0,
           "unit": "EUR"
@@ -2766,43 +2766,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.986,
+            "value": 2.013,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.52,
+            "value": 7.62,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 2.066,
+            "value": 2.029,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.82,
+            "value": 7.68,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 1.64,
+            "value": 1.36,
             "unit": "percent"
           },
           "diesel": {
-            "value": 1.97,
+            "value": -1.79,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": 8.8,
+          "value": 9.4,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.876,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.898,
             "unit": "EUR/L"
@@ -2834,6 +2830,10 @@
           {
             "value": 1.986,
             "unit": "EUR/L"
+          },
+          {
+            "value": 2.013,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -2844,11 +2844,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 99.3,
+            "value": 100.65,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 11.3,
+            "value": 11.5,
             "unit": "hours"
           }
         },
@@ -2864,8 +2864,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Portugal/",
         "Also available in Portuguese": "https://www.fuel-prices.eu/lang/pt",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -2874,7 +2874,7 @@
           "value": 0.997,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "A1": {
           "value": 25.05,
           "unit": "EUR"
@@ -2906,17 +2906,17 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.816,
+            "value": 1.813,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.87,
+            "value": 6.86,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.94,
+            "value": 1.938,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
@@ -2926,23 +2926,19 @@
         },
         "weekly_change": {
           "petrol": {
-            "value": 0.0,
+            "value": -0.17,
             "unit": "percent"
           },
           "diesel": {
-            "value": -4.43,
+            "value": -0.1,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -0.5,
+          "value": -1.5,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.651,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.652,
             "unit": "EUR/L"
@@ -2974,6 +2970,10 @@
           {
             "value": 1.816,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.813,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -2984,7 +2984,7 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 90.8,
+            "value": 90.65,
             "unit": "EUR"
           },
           "labor_hours": {
@@ -3004,8 +3004,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Romania/",
         "Also available in Romanian": "https://www.fuel-prices.eu/lang/ro",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -3014,7 +3014,7 @@
           "value": 0.666,
           "unit": "EUR"
         },
-        "Data points": "934 weekly readings",
+        "Data points": "935 weekly readings",
         "Rovinieta (1-Day)": {
           "value": 3.5,
           "unit": "EUR"
@@ -3059,43 +3059,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.724,
+            "value": 1.753,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.53,
+            "value": 6.64,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.862,
+            "value": 1.883,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.05,
+            "value": 7.13,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 1.65,
+            "value": 1.68,
             "unit": "percent"
           },
           "diesel": {
-            "value": 1.64,
+            "value": 1.13,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -5.5,
+          "value": -4.7,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.665,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.673,
             "unit": "EUR/L"
@@ -3127,6 +3123,10 @@
           {
             "value": 1.724,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.753,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -3137,11 +3137,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 86.2,
+            "value": 87.65,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 12.0,
+            "value": 12.2,
             "unit": "hours"
           }
         },
@@ -3157,8 +3157,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Slovakia/",
         "Also available in Slovak": "https://www.fuel-prices.eu/lang/sk",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -3167,7 +3167,7 @@
           "value": 0.845,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "1-Day E-Vignette": {
           "value": 8.1,
           "unit": "EUR"
@@ -3192,43 +3192,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.562,
+            "value": 1.615,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 5.91,
+            "value": 6.11,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.813,
+            "value": 1.9,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.86,
+            "value": 7.19,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": -1.01,
+            "value": 3.39,
             "unit": "percent"
           },
           "diesel": {
-            "value": -1.73,
+            "value": 4.8,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -14.4,
+          "value": -12.2,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.576,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.546,
             "unit": "EUR/L"
@@ -3260,6 +3256,10 @@
           {
             "value": 1.562,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.615,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -3270,11 +3270,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 78.1,
+            "value": 80.75,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 6.3,
+            "value": 6.5,
             "unit": "hours"
           }
         },
@@ -3290,8 +3290,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Slovenia/",
         "Also available in Slovenian": "https://www.fuel-prices.eu/lang/sl",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -3300,7 +3300,7 @@
           "value": 0.82,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "Vignette Slovenia (7-Day)": {
           "value": 16.0,
           "unit": "EUR"
@@ -3321,43 +3321,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.724,
+            "value": 1.733,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.53,
+            "value": 6.56,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.861,
+            "value": 1.865,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 7.04,
+            "value": 7.06,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 1.11,
+            "value": 0.52,
             "unit": "percent"
           },
           "diesel": {
-            "value": 1.75,
+            "value": 0.21,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -5.5,
+          "value": -5.8,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.438,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.518,
             "unit": "EUR/L"
@@ -3389,6 +3385,10 @@
           {
             "value": 1.724,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.733,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -3399,11 +3399,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 86.2,
+            "value": 86.65,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 6.5,
+            "value": 6.6,
             "unit": "hours"
           }
         },
@@ -3419,8 +3419,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Spain/",
         "Also available in Spanish": "https://www.fuel-prices.eu/lang/es",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -3429,7 +3429,7 @@
           "value": 0.825,
           "unit": "EUR"
         },
-        "Data points": "1079 weekly readings",
+        "Data points": "1080 weekly readings",
         "AP-68": {
           "value": 37.25,
           "unit": "EUR"
@@ -3461,43 +3461,39 @@
       "fuel": {
         "euro_95_petrol": {
           "eur_per_l": {
-            "value": 1.435,
+            "value": 1.471,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 5.43,
+            "value": 5.57,
             "unit": "EUR/gal"
           }
         },
         "diesel": {
           "eur_per_l": {
-            "value": 1.817,
+            "value": 1.73,
             "unit": "EUR/L"
           },
           "eur_per_gal": {
-            "value": 6.88,
+            "value": 6.55,
             "unit": "EUR/gal"
           }
         },
         "weekly_change": {
           "petrol": {
-            "value": 1.92,
+            "value": 2.51,
             "unit": "percent"
           },
           "diesel": {
-            "value": 2.08,
+            "value": -4.79,
             "unit": "percent"
           }
         },
         "vs_eu_avg": {
-          "value": -21.4,
+          "value": -20.1,
           "unit": "percent"
         },
         "trend_e95": [
-          {
-            "value": 1.542,
-            "unit": "EUR/L"
-          },
           {
             "value": 1.329,
             "unit": "EUR/L"
@@ -3529,6 +3525,10 @@
           {
             "value": 1.435,
             "unit": "EUR/L"
+          },
+          {
+            "value": 1.471,
+            "unit": "EUR/L"
           }
         ]
       },
@@ -3539,11 +3539,11 @@
         },
         "tank_50l": {
           "cost": {
-            "value": 71.75,
+            "value": 73.55,
             "unit": "EUR"
           },
           "labor_hours": {
-            "value": 4.2,
+            "value": 4.3,
             "unit": "hours"
           }
         },
@@ -3559,8 +3559,8 @@
       "road_costs": {
         "URL": "https://www.fuel-prices.eu/Sweden/",
         "Also available in Swedish": "https://www.fuel-prices.eu/lang/sv",
-        "last_updated": "2026-08-24",
-        "source_reliability": "0.73",
+        "last_updated": "2026-08-31",
+        "source_reliability": "0.8",
         "data_completeness": {
           "value": 100.0,
           "unit": "percent"
@@ -3569,7 +3569,7 @@
           "value": 0.924,
           "unit": "EUR"
         },
-        "Data points": "1081 weekly readings",
+        "Data points": "1082 weekly readings",
         "Öresund Bridge (SE Side) (bridge)": {
           "value": 65.0,
           "unit": "EUR"
