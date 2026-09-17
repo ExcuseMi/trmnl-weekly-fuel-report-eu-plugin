@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-09-10T18:58:59+00:00",
-    "data_date": "2026-09-07",
-    "previous_data_date": "2026-08-31",
+    "last_updated": "2026-09-17T19:34:36+00:00",
+    "data_date": "2026-09-14",
+    "previous_data_date": "2026-09-07",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-09-10",
+    "next_expected_update": "2026-09-17",
     "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
@@ -143,11 +143,11 @@
   },
   "overview": {
     "EU Average Euro 95 Petrol": {
-      "value": 1.907,
+      "value": 1.924,
       "unit": "EUR/L"
     },
     "EU Average Diesel": {
-      "value": 2.028,
+      "value": 2.075,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
@@ -155,7 +155,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.632,
+      "value": 2.564,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -163,7 +163,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.478,
+      "value": 2.506,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
@@ -176,49 +176,45 @@
     "fuel": {
       "euro_95_petrol": {
         "eur_per_l": {
-          "value": 1.851,
+          "value": 1.889,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 7.01,
+          "value": 7.15,
           "unit": "EUR/gal"
         }
       },
       "diesel": {
         "eur_per_l": {
-          "value": 1.942,
+          "value": 2.0,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 7.35,
+          "value": 7.57,
           "unit": "EUR/gal"
         }
       },
       "weekly_change": {
         "petrol": {
-          "value": 2.1,
+          "value": 2.05,
           "unit": "percent"
         },
         "diesel": {
-          "value": 0.21,
+          "value": 2.99,
           "unit": "percent"
         }
       },
       "vs_eu_avg": {
-        "value": -2.9,
+        "value": -1.8,
         "unit": "percent"
       },
       "trend_e95": [
-        {
-          "value": 1.652,
-          "unit": "EUR/L"
-        },
         {
           "value": 1.721,
           "unit": "EUR/L"
         },
         {
-          "value": 1.768,
+          "value": 1.733,
           "unit": "EUR/L"
         },
         {
@@ -244,6 +240,10 @@
         {
           "value": 1.851,
           "unit": "EUR/L"
+        },
+        {
+          "value": 1.889,
+          "unit": "EUR/L"
         }
       ]
     },
@@ -254,11 +254,11 @@
       },
       "tank_50l": {
         "cost": {
-          "value": 92.55,
+          "value": 94.45,
           "unit": "EUR"
         },
         "labor_hours": {
-          "value": 14.5,
+          "value": 14.8,
           "unit": "hours"
         }
       },
@@ -274,7 +274,7 @@
     "road_costs": {
       "URL": "https://www.fuel-prices.eu/Romania/",
       "Also available in Romanian": "https://www.fuel-prices.eu/lang/ro",
-      "last_updated": "2026-09-07",
+      "last_updated": "2026-09-14",
       "source_reliability": "0.8",
       "data_completeness": {
         "value": 100.0,
@@ -284,7 +284,7 @@
         "value": 0.666,
         "unit": "EUR"
       },
-      "Data points": "936 weekly readings",
+      "Data points": "937 weekly readings",
       "Rovinieta (1-Day)": {
         "value": 3.5,
         "unit": "EUR"
