@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-09-17T19:34:36+00:00",
-    "data_date": "2026-09-14",
-    "previous_data_date": "2026-09-07",
+    "last_updated": "2026-09-24T19:50:09+00:00",
+    "data_date": "2026-09-21",
+    "previous_data_date": "2026-09-14",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-09-17",
+    "next_expected_update": "2026-09-24",
     "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
@@ -143,11 +143,11 @@
   },
   "overview": {
     "EU Average Euro 95 Petrol": {
-      "value": 1.924,
+      "value": 1.959,
       "unit": "EUR/L"
     },
     "EU Average Diesel": {
-      "value": 2.075,
+      "value": 2.138,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
@@ -155,7 +155,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.564,
+      "value": 2.618,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -163,7 +163,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.506,
+      "value": 2.579,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
@@ -176,43 +176,39 @@
     "fuel": {
       "euro_95_petrol": {
         "eur_per_l": {
-          "value": 2.172,
+          "value": 2.219,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 8.22,
+          "value": 8.4,
           "unit": "EUR/gal"
         }
       },
       "diesel": {
         "eur_per_l": {
-          "value": 2.291,
+          "value": 2.384,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 8.67,
+          "value": 9.02,
           "unit": "EUR/gal"
         }
       },
       "weekly_change": {
         "petrol": {
-          "value": 2.7,
+          "value": 2.16,
           "unit": "percent"
         },
         "diesel": {
-          "value": 1.51,
+          "value": 4.06,
           "unit": "percent"
         }
       },
       "vs_eu_avg": {
-        "value": 12.9,
+        "value": 13.3,
         "unit": "percent"
       },
       "trend_e95": [
-        {
-          "value": 2.01,
-          "unit": "EUR/L"
-        },
         {
           "value": 2.057,
           "unit": "EUR/L"
@@ -244,6 +240,10 @@
         {
           "value": 2.172,
           "unit": "EUR/L"
+        },
+        {
+          "value": 2.219,
+          "unit": "EUR/L"
         }
       ]
     },
@@ -254,11 +254,11 @@
       },
       "tank_50l": {
         "cost": {
-          "value": 108.6,
+          "value": 110.95,
           "unit": "EUR"
         },
         "labor_hours": {
-          "value": 6.6,
+          "value": 6.8,
           "unit": "hours"
         }
       },
@@ -274,7 +274,7 @@
     "road_costs": {
       "URL": "https://www.fuel-prices.eu/France/",
       "Also available in French": "https://www.fuel-prices.eu/lang/fr",
-      "last_updated": "2026-09-14",
+      "last_updated": "2026-09-21",
       "source_reliability": "0.8",
       "data_completeness": {
         "value": 100.0,
@@ -284,13 +284,13 @@
         "value": 1.015,
         "unit": "EUR"
       },
-      "Data points": "1084 weekly readings",
+      "Data points": "1085 weekly readings",
       "Mont Blanc Tunnel (FR-IT) (tunnel)": {
-        "value": 56.4,
+        "value": 55.5,
         "unit": "EUR"
       },
       "Fréjus Tunnel (FR-IT) (tunnel)": {
-        "value": 56.4,
+        "value": 55.5,
         "unit": "EUR"
       },
       "A89": {
