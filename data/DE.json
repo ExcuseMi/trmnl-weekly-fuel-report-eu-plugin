@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-09-24T19:50:09+00:00",
-    "data_date": "2026-09-21",
-    "previous_data_date": "2026-09-14",
+    "last_updated": "2026-10-01T20:50:21+00:00",
+    "data_date": "2026-09-28",
+    "previous_data_date": "2026-09-21",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-09-24",
+    "next_expected_update": "2026-10-01",
     "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
@@ -21,7 +21,7 @@
     "emergency_numbers": "0.95 (official government data)",
     "economic_data": "0.85 (Eurostat, updated quarterly/annually)",
     "electricity_prices": "0.82 (Eurostat, semi-annual updates)",
-    "live_station_prices_fr_es_it": "0.80 (official gov't open data, real-time, updated every 12-18h)",
+    "live_station_prices_fr_es_it": "0.80 (official gov't open data, collected as often as each feed updates: FR/ES/PT about hourly, IT daily)",
     "price_breakdown_tax": "0.8 (derived from EC Oil Bulletin excise/VAT/tax sheets, same source)",
     "Per-Country Data Completeness (fuel prices)": "",
     "AT": {
@@ -57,7 +57,7 @@
       "unit": "percent"
     },
     "ES": {
-      "value": 100.0,
+      "value": 99.9,
       "unit": "percent"
     },
     "FI": {
@@ -135,19 +135,15 @@
     "SK": {
       "value": 100.0,
       "unit": "percent"
-    },
-    "UK": {
-      "value": 0.0,
-      "unit": "percent"
     }
   },
   "overview": {
-    "EU Average Euro 95 Petrol": {
-      "value": 1.959,
+    "EU Average (official EU-27 weighted average, European Commission) Euro 95 Petrol": {
+      "value": 2.104,
       "unit": "EUR/L"
     },
-    "EU Average Diesel": {
-      "value": 2.138,
+    "EU Average (official EU-27 weighted average, European Commission) Diesel": {
+      "value": 2.237,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
@@ -155,7 +151,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.618,
+      "value": 2.658,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -163,7 +159,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.579,
+      "value": 2.542,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
@@ -176,43 +172,39 @@
     "fuel": {
       "euro_95_petrol": {
         "eur_per_l": {
-          "value": 2.348,
+          "value": 2.345,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 8.89,
+          "value": 8.88,
           "unit": "EUR/gal"
         }
       },
       "diesel": {
         "eur_per_l": {
-          "value": 2.457,
+          "value": 2.437,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 9.3,
+          "value": 9.23,
           "unit": "EUR/gal"
         }
       },
       "weekly_change": {
         "petrol": {
-          "value": -0.38,
+          "value": -0.13,
           "unit": "percent"
         },
         "diesel": {
-          "value": 1.28,
+          "value": -0.81,
           "unit": "percent"
         }
       },
       "vs_eu_avg": {
-        "value": 19.8,
+        "value": 11.5,
         "unit": "percent"
       },
       "trend_e95": [
-        {
-          "value": 2.191,
-          "unit": "EUR/L"
-        },
         {
           "value": 2.184,
           "unit": "EUR/L"
@@ -244,6 +236,10 @@
         {
           "value": 2.348,
           "unit": "EUR/L"
+        },
+        {
+          "value": 2.345,
+          "unit": "EUR/L"
         }
       ]
     },
@@ -254,7 +250,7 @@
       },
       "tank_50l": {
         "cost": {
-          "value": 117.4,
+          "value": 117.25,
           "unit": "EUR"
         },
         "labor_hours": {
@@ -274,17 +270,21 @@
     "road_costs": {
       "URL": "https://www.fuel-prices.eu/Germany/",
       "Also available in German": "https://www.fuel-prices.eu/lang/de",
-      "last_updated": "2026-09-21",
+      "last_updated": "2026-09-28",
       "source_reliability": "0.8",
       "data_completeness": {
         "value": 100.0,
         "unit": "percent"
       },
+      "Note": {
+        "value": 0.655,
+        "unit": "EUR/L"
+      },
       "Historical range (since 2005-01-03)": {
         "value": 1.077,
         "unit": "EUR"
       },
-      "Data points": "1085 weekly readings",
+      "Data points": "1086 weekly readings",
       "Rossfeldpanoramastraße (gate)": {
         "value": 8.5,
         "unit": "EUR"
