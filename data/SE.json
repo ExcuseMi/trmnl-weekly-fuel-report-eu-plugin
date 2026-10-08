@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-10-01T20:50:21+00:00",
-    "data_date": "2026-09-28",
-    "previous_data_date": "2026-09-21",
+    "last_updated": "2026-10-08T21:04:10+00:00",
+    "data_date": "2026-10-05",
+    "previous_data_date": "2026-09-28",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-10-01",
+    "next_expected_update": "2026-10-08",
     "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
@@ -139,11 +139,11 @@
   },
   "overview": {
     "EU Average (official EU-27 weighted average, European Commission) Euro 95 Petrol": {
-      "value": 2.104,
+      "value": 2.006,
       "unit": "EUR/L"
     },
     "EU Average (official EU-27 weighted average, European Commission) Diesel": {
-      "value": 2.237,
+      "value": 2.149,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
@@ -151,7 +151,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.658,
+      "value": 2.605,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -159,12 +159,12 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.542,
+      "value": 2.553,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
     "Data available since": "2005-01-03",
-    "EUR/USD rate": "$1.1525 (ECB daily reference rate)"
+    "EUR/USD rate": "$1.1204 (ECB reference rate of 2026-10-05, the last fixing on or before the bulletin date 2026-10-05)"
   },
   "country": {
     "name": "Sweden",
@@ -172,43 +172,39 @@
     "fuel": {
       "euro_95_petrol": {
         "eur_per_l": {
-          "value": 1.595,
+          "value": 1.589,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 6.04,
+          "value": 6.02,
           "unit": "EUR/gal"
         }
       },
       "diesel": {
         "eur_per_l": {
-          "value": 2.135,
+          "value": 2.118,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 8.08,
+          "value": 8.02,
           "unit": "EUR/gal"
         }
       },
       "weekly_change": {
         "petrol": {
-          "value": 1.01,
+          "value": -0.38,
           "unit": "percent"
         },
         "diesel": {
-          "value": 2.15,
+          "value": -0.8,
           "unit": "percent"
         }
       },
       "vs_eu_avg": {
-        "value": -24.2,
+        "value": -20.8,
         "unit": "percent"
       },
       "trend_e95": [
-        {
-          "value": 1.453,
-          "unit": "EUR/L"
-        },
         {
           "value": 1.308,
           "unit": "EUR/L"
@@ -240,6 +236,10 @@
         {
           "value": 1.595,
           "unit": "EUR/L"
+        },
+        {
+          "value": 1.589,
+          "unit": "EUR/L"
         }
       ]
     },
@@ -250,7 +250,7 @@
       },
       "tank_50l": {
         "cost": {
-          "value": 79.75,
+          "value": 79.45,
           "unit": "EUR"
         },
         "labor_hours": {
@@ -270,7 +270,7 @@
     "road_costs": {
       "URL": "https://www.fuel-prices.eu/Sweden/",
       "Also available in Swedish": "https://www.fuel-prices.eu/lang/sv",
-      "last_updated": "2026-09-28",
+      "last_updated": "2026-10-05",
       "source_reliability": "0.8",
       "data_completeness": {
         "value": 100.0,
@@ -280,7 +280,7 @@
         "value": 0.924,
         "unit": "EUR"
       },
-      "Data points": "1086 weekly readings",
+      "Data points": "1087 weekly readings",
       "Öresund Bridge (SE Side) (bridge)": {
         "value": 61.12,
         "unit": "EUR"
