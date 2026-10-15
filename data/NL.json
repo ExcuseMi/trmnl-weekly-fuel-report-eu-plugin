@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-10-08T21:04:10+00:00",
-    "data_date": "2026-10-05",
-    "previous_data_date": "2026-09-28",
+    "last_updated": "2026-10-15T19:43:30+00:00",
+    "data_date": "2026-10-12",
+    "previous_data_date": "2026-10-05",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-10-08",
+    "next_expected_update": "2026-10-15",
     "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
@@ -139,11 +139,11 @@
   },
   "overview": {
     "EU Average (official EU-27 weighted average, European Commission) Euro 95 Petrol": {
-      "value": 2.006,
+      "value": 2.01,
       "unit": "EUR/L"
     },
     "EU Average (official EU-27 weighted average, European Commission) Diesel": {
-      "value": 2.149,
+      "value": 2.136,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
@@ -151,7 +151,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.605,
+      "value": 2.658,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -159,12 +159,12 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.553,
+      "value": 2.536,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
     "Data available since": "2005-01-03",
-    "EUR/USD rate": "$1.1204 (ECB reference rate of 2026-10-05, the last fixing on or before the bulletin date 2026-10-05)"
+    "EUR/USD rate": "$1.1181 (ECB reference rate of 2026-10-12, the last fixing on or before the bulletin date 2026-10-12)"
   },
   "country": {
     "name": "Netherlands",
@@ -172,43 +172,39 @@
     "fuel": {
       "euro_95_petrol": {
         "eur_per_l": {
-          "value": 2.432,
+          "value": 2.462,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 9.21,
+          "value": 9.32,
           "unit": "EUR/gal"
         }
       },
       "diesel": {
         "eur_per_l": {
-          "value": 2.506,
+          "value": 2.482,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 9.49,
+          "value": 9.4,
           "unit": "EUR/gal"
         }
       },
       "weekly_change": {
         "petrol": {
-          "value": -1.34,
+          "value": 1.23,
           "unit": "percent"
         },
         "diesel": {
-          "value": -0.79,
+          "value": -0.96,
           "unit": "percent"
         }
       },
       "vs_eu_avg": {
-        "value": 21.2,
+        "value": 22.5,
         "unit": "percent"
       },
       "trend_e95": [
-        {
-          "value": 2.29,
-          "unit": "EUR/L"
-        },
         {
           "value": 2.329,
           "unit": "EUR/L"
@@ -240,6 +236,10 @@
         {
           "value": 2.432,
           "unit": "EUR/L"
+        },
+        {
+          "value": 2.462,
+          "unit": "EUR/L"
         }
       ]
     },
@@ -258,7 +258,7 @@
       },
       "tank_50l": {
         "cost": {
-          "value": 121.6,
+          "value": 123.1,
           "unit": "EUR"
         },
         "labor_hours": {
@@ -270,17 +270,21 @@
     "road_costs": {
       "URL": "https://www.fuel-prices.eu/Netherlands/",
       "Also available in Dutch": "https://www.fuel-prices.eu/lang/nl",
-      "last_updated": "2026-10-05",
+      "last_updated": "2026-10-12",
       "source_reliability": "0.8",
       "data_completeness": {
         "value": 100.0,
         "unit": "percent"
       },
+      "Note": {
+        "value": 0.845,
+        "unit": "EUR/L"
+      },
       "Historical range (since 2005-01-03)": {
         "value": 1.193,
         "unit": "EUR"
       },
-      "Data points": "1087 weekly readings",
+      "Data points": "1088 weekly readings",
       "Kiltunnel (tunnel)": {
         "value": 2.0,
         "unit": "EUR"
