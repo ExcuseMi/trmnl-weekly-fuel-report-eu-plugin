@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-10-15T19:43:30+00:00",
-    "data_date": "2026-10-12",
-    "previous_data_date": "2026-10-05",
+    "last_updated": "2026-10-22T19:46:47+00:00",
+    "data_date": "2026-10-19",
+    "previous_data_date": "2026-10-12",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-10-15",
+    "next_expected_update": "2026-10-22",
     "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
@@ -139,11 +139,11 @@
   },
   "overview": {
     "EU Average (official EU-27 weighted average, European Commission) Euro 95 Petrol": {
-      "value": 2.01,
+      "value": 1.991,
       "unit": "EUR/L"
     },
     "EU Average (official EU-27 weighted average, European Commission) Diesel": {
-      "value": 2.136,
+      "value": 2.139,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
@@ -151,7 +151,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.658,
+      "value": 2.605,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -159,12 +159,12 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.536,
+      "value": 2.532,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
     "Data available since": "2005-01-03",
-    "EUR/USD rate": "$1.1181 (ECB reference rate of 2026-10-12, the last fixing on or before the bulletin date 2026-10-12)"
+    "EUR/USD rate": "$1.1225 (ECB reference rate of 2026-10-19, the last fixing on or before the bulletin date 2026-10-19)"
   },
   "country": {
     "name": "Austria",
@@ -172,43 +172,39 @@
     "fuel": {
       "euro_95_petrol": {
         "eur_per_l": {
-          "value": 1.865,
+          "value": 1.817,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 7.06,
+          "value": 6.88,
           "unit": "EUR/gal"
         }
       },
       "diesel": {
         "eur_per_l": {
-          "value": 2.162,
+          "value": 2.132,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 8.18,
+          "value": 8.07,
           "unit": "EUR/gal"
         }
       },
       "weekly_change": {
         "petrol": {
-          "value": 1.52,
+          "value": -2.57,
           "unit": "percent"
         },
         "diesel": {
-          "value": 1.12,
+          "value": -1.39,
           "unit": "percent"
         }
       },
       "vs_eu_avg": {
-        "value": -7.2,
+        "value": -8.8,
         "unit": "percent"
       },
       "trend_e95": [
-        {
-          "value": 1.795,
-          "unit": "EUR/L"
-        },
         {
           "value": 1.784,
           "unit": "EUR/L"
@@ -240,6 +236,10 @@
         {
           "value": 1.865,
           "unit": "EUR/L"
+        },
+        {
+          "value": 1.817,
+          "unit": "EUR/L"
         }
       ]
     },
@@ -250,16 +250,16 @@
       },
       "tank_50l": {
         "cost": {
-          "value": 93.25,
+          "value": 90.85,
           "unit": "EUR"
         },
         "labor_hours": {
-          "value": 4.5,
+          "value": 4.4,
           "unit": "hours"
         }
       },
       "electricity_price": {
-        "value": 0.3272,
+        "value": 0.326,
         "unit": "EUR/kWh"
       },
       "inflation_rate": {
@@ -270,7 +270,7 @@
     "road_costs": {
       "URL": "https://www.fuel-prices.eu/Austria/",
       "Also available in German": "https://www.fuel-prices.eu/lang/de",
-      "last_updated": "2026-10-12",
+      "last_updated": "2026-10-19",
       "source_reliability": "0.8",
       "data_completeness": {
         "value": 100.0,
@@ -280,7 +280,7 @@
         "value": 0.876,
         "unit": "EUR"
       },
-      "Data points": "1086 weekly readings",
+      "Data points": "1087 weekly readings",
       "1-Day Vignette (Digital)": {
         "value": 9.6,
         "unit": "EUR"

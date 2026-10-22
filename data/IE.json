@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-10-15T19:43:30+00:00",
-    "data_date": "2026-10-12",
-    "previous_data_date": "2026-10-05",
+    "last_updated": "2026-10-22T19:46:47+00:00",
+    "data_date": "2026-10-19",
+    "previous_data_date": "2026-10-12",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-10-15",
+    "next_expected_update": "2026-10-22",
     "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
@@ -139,11 +139,11 @@
   },
   "overview": {
     "EU Average (official EU-27 weighted average, European Commission) Euro 95 Petrol": {
-      "value": 2.01,
+      "value": 1.991,
       "unit": "EUR/L"
     },
     "EU Average (official EU-27 weighted average, European Commission) Diesel": {
-      "value": 2.136,
+      "value": 2.139,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
@@ -151,7 +151,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.658,
+      "value": 2.605,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -159,12 +159,12 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.536,
+      "value": 2.532,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
     "Data available since": "2005-01-03",
-    "EUR/USD rate": "$1.1181 (ECB reference rate of 2026-10-12, the last fixing on or before the bulletin date 2026-10-12)"
+    "EUR/USD rate": "$1.1225 (ECB reference rate of 2026-10-19, the last fixing on or before the bulletin date 2026-10-19)"
   },
   "country": {
     "name": "Ireland",
@@ -172,43 +172,39 @@
     "fuel": {
       "euro_95_petrol": {
         "eur_per_l": {
-          "value": 1.983,
+          "value": 1.971,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 7.51,
+          "value": 7.46,
           "unit": "EUR/gal"
         }
       },
       "diesel": {
         "eur_per_l": {
-          "value": 2.164,
+          "value": 2.137,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 8.19,
+          "value": 8.09,
           "unit": "EUR/gal"
         }
       },
       "weekly_change": {
         "petrol": {
-          "value": 0.0,
+          "value": -0.3,
           "unit": "percent"
         },
         "diesel": {
-          "value": 0.0,
+          "value": -0.79,
           "unit": "percent"
         }
       },
       "vs_eu_avg": {
-        "value": -1.3,
+        "value": -1.0,
         "unit": "percent"
       },
       "trend_e95": [
-        {
-          "value": 1.839,
-          "unit": "EUR/L"
-        },
         {
           "value": 1.836,
           "unit": "EUR/L"
@@ -238,7 +234,11 @@
           "unit": "EUR/L"
         },
         {
-          "value": 1.983,
+          "value": 1.977,
+          "unit": "EUR/L"
+        },
+        {
+          "value": 1.971,
           "unit": "EUR/L"
         }
       ]
@@ -250,7 +250,7 @@
       },
       "tank_50l": {
         "cost": {
-          "value": 99.15,
+          "value": 98.55,
           "unit": "EUR"
         },
         "labor_hours": {
@@ -259,7 +259,7 @@
         }
       },
       "electricity_price": {
-        "value": 0.4042,
+        "value": 0.3871,
         "unit": "EUR/kWh"
       },
       "inflation_rate": {
@@ -269,7 +269,7 @@
     },
     "road_costs": {
       "URL": "https://www.fuel-prices.eu/Ireland/",
-      "last_updated": "2026-10-12",
+      "last_updated": "2026-10-19",
       "source_reliability": "0.8",
       "data_completeness": {
         "value": 100.0,
@@ -283,7 +283,7 @@
         "value": 0.937,
         "unit": "EUR"
       },
-      "Data points": "1088 weekly readings",
+      "Data points": "1089 weekly readings",
       "Dublin Port Tunnel (gate)": {
         "value": 14.0,
         "unit": "EUR"
