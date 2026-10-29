@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-10-22T19:46:47+00:00",
-    "data_date": "2026-10-19",
-    "previous_data_date": "2026-10-12",
+    "last_updated": "2026-10-29T20:54:31+00:00",
+    "data_date": "2026-10-26",
+    "previous_data_date": "2026-10-19",
     "update_frequency": "weekly (every Thursday after 15:00 EET)",
-    "next_expected_update": "2026-10-22",
+    "next_expected_update": "2026-10-29",
     "data_freshness_days": "3",
     "source": "European Commission Weekly Oil Bulletin (official government dataset)",
     "source_url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
@@ -139,11 +139,11 @@
   },
   "overview": {
     "EU Average (official EU-27 weighted average, European Commission) Euro 95 Petrol": {
-      "value": 1.991,
+      "value": 1.954,
       "unit": "EUR/L"
     },
     "EU Average (official EU-27 weighted average, European Commission) Diesel": {
-      "value": 2.139,
+      "value": 2.146,
       "unit": "EUR/L"
     },
     "EU Cheapest Petrol": {
@@ -151,7 +151,7 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Petrol": {
-      "value": 2.605,
+      "value": 2.525,
       "unit": "EUR/L"
     },
     "EU Cheapest Diesel": {
@@ -159,12 +159,12 @@
       "unit": "EUR/L"
     },
     "EU Most Expensive Diesel": {
-      "value": 2.532,
+      "value": 2.547,
       "unit": "EUR/L"
     },
     "Countries tracked": "27 EU member states",
     "Data available since": "2005-01-03",
-    "EUR/USD rate": "$1.1225 (ECB reference rate of 2026-10-19, the last fixing on or before the bulletin date 2026-10-19)"
+    "EUR/USD rate": "$1.1188 (ECB reference rate of 2026-10-26, the last fixing on or before the bulletin date 2026-10-26)"
   },
   "country": {
     "name": "Spain",
@@ -172,17 +172,17 @@
     "fuel": {
       "euro_95_petrol": {
         "eur_per_l": {
-          "value": 1.78,
+          "value": 1.751,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
-          "value": 6.74,
+          "value": 6.63,
           "unit": "EUR/gal"
         }
       },
       "diesel": {
         "eur_per_l": {
-          "value": 1.889,
+          "value": 1.888,
           "unit": "EUR/L"
         },
         "eur_per_gal": {
@@ -192,23 +192,19 @@
       },
       "weekly_change": {
         "petrol": {
-          "value": -0.56,
+          "value": -1.63,
           "unit": "percent"
         },
         "diesel": {
-          "value": 0.0,
+          "value": -0.05,
           "unit": "percent"
         }
       },
       "vs_eu_avg": {
-        "value": -10.6,
+        "value": -10.4,
         "unit": "percent"
       },
       "trend_e95": [
-        {
-          "value": 1.724,
-          "unit": "EUR/L"
-        },
         {
           "value": 1.732,
           "unit": "EUR/L"
@@ -240,6 +236,10 @@
         {
           "value": 1.78,
           "unit": "EUR/L"
+        },
+        {
+          "value": 1.751,
+          "unit": "EUR/L"
         }
       ]
     },
@@ -250,11 +250,11 @@
       },
       "tank_50l": {
         "cost": {
-          "value": 89.0,
+          "value": 87.55,
           "unit": "EUR"
         },
         "labor_hours": {
-          "value": 6.8,
+          "value": 6.7,
           "unit": "hours"
         }
       },
@@ -270,7 +270,7 @@
     "road_costs": {
       "URL": "https://www.fuel-prices.eu/Spain/",
       "Also available in Spanish": "https://www.fuel-prices.eu/lang/es",
-      "last_updated": "2026-10-19",
+      "last_updated": "2026-10-26",
       "source_reliability": "0.8",
       "data_completeness": {
         "value": 99.9,
@@ -280,7 +280,7 @@
         "value": 0.825,
         "unit": "EUR"
       },
-      "Data points": "1087 weekly readings",
+      "Data points": "1088 weekly readings",
       "AP-68": {
         "value": 37.25,
         "unit": "EUR"
